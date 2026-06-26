@@ -1,11 +1,12 @@
 /**
  * Aadith Thiruvangadan - Project Portfolio Script
- * Handles theme toggling, project tab transitions, ScrollSpy, and image modals.
+ * Handles theme toggling, ScrollSpy, dynamic SVG modal lightboxes, and printing.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
     initTheme();
     initScrollSpy();
+    initModalViewer();
     initKeyboardAccessibility();
 });
 
@@ -16,14 +17,14 @@ function initTheme() {
     const themeBtn = document.getElementById('theme-toggle-btn');
     if (!themeBtn) return;
 
-    // Check saved theme or default to system preference
+    // Check saved theme or default to system preference (but default light if none)
     const savedTheme = localStorage.getItem('theme');
-    const systemPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
-    if (savedTheme === 'light' || (!savedTheme && systemPrefersLight)) {
-        setLightTheme();
-    } else {
+    if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
         setDarkTheme();
+    } else {
+        setLightTheme();
     }
 
     // Toggle click listener
@@ -43,7 +44,7 @@ function setLightTheme() {
     
     const themeIcon = document.querySelector('#theme-toggle-btn i');
     if (themeIcon) {
-        themeIcon.className = 'fa-solid fa-sun';
+        themeIcon.className = 'fa-solid fa-moon';
     }
 }
 
@@ -54,27 +55,71 @@ function setDarkTheme() {
     
     const themeIcon = document.querySelector('#theme-toggle-btn i');
     if (themeIcon) {
-        themeIcon.className = 'fa-solid fa-moon';
+        themeIcon.className = 'fa-solid fa-sun';
     }
 }
 
-
-
 // ==========================================================================
-// IMAGE LIGHTBOX MODAL
+// DYNAMIC SVG MODAL LIGHTBOX
 // ==========================================================================
-function openModal(imgSrc, captionText) {
+function initModalViewer() {
+    const containers = document.querySelectorAll('.screenshot-container');
     const modal = document.getElementById('image-modal');
+    const svgContainer = document.getElementById('modal-svg-container');
     const modalImg = document.getElementById('modal-img-element');
     const modalCaption = document.getElementById('modal-caption');
 
-    if (!modal || !modalImg || !modalCaption) return;
+    if (!modal || !svgContainer || !modalImg || !modalCaption) return;
 
-    modalImg.src = imgSrc;
-    modalCaption.textContent = captionText;
-    
-    modal.classList.add('open');
-    document.body.style.overflow = 'hidden'; // Stop background scrolling
+    containers.forEach(container => {
+        // Strip out inline onclick to avoid duplication
+        container.removeAttribute('onclick');
+
+        container.addEventListener('click', (e) => {
+            const svgChild = container.querySelector('svg');
+            const imgChild = container.querySelector('img');
+            let caption = container.getAttribute('data-caption');
+            if (!caption && imgChild) {
+                caption = imgChild.getAttribute('alt');
+            }
+            if (!caption && container.nextElementSibling && container.nextElementSibling.classList.contains('caption')) {
+                caption = container.nextElementSibling.textContent;
+            }
+            if (!caption) {
+                caption = 'Project interface view mockup';
+            }
+
+            if (svgChild) {
+                // Clear any previous SVGs
+                svgContainer.innerHTML = '';
+                
+                // Clone the SVG
+                const clonedSvg = svgChild.cloneNode(true);
+                
+                // Scale SVG for lightbox modal view
+                clonedSvg.setAttribute('width', '100%');
+                clonedSvg.setAttribute('height', 'auto');
+                clonedSvg.style.maxWidth = '600px';
+                clonedSvg.style.display = 'block';
+
+                svgContainer.appendChild(clonedSvg);
+                svgContainer.style.display = 'block';
+                modalImg.style.display = 'none';
+            } else {
+                // Fallback to image if no SVG
+                const img = container.querySelector('img');
+                if (img) {
+                    modalImg.src = img.src;
+                    modalImg.style.display = 'block';
+                    svgContainer.style.display = 'none';
+                }
+            }
+
+            modalCaption.textContent = caption;
+            modal.classList.add('open');
+            document.body.style.overflow = 'hidden'; // Stop background scrolling
+        });
+    });
 }
 
 function closeModal() {
@@ -96,7 +141,7 @@ function initScrollSpy() {
 
     window.addEventListener('scroll', () => {
         let currentSectionId = '';
-        const scrollPosition = window.scrollY + 120; // Offset for header height
+        const scrollPosition = window.scrollY + 140; // Offset for header height
 
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
@@ -108,8 +153,8 @@ function initScrollSpy() {
         });
 
         // Fallback for top of page
-        if (window.scrollY < 200) {
-            currentSectionId = 'about'; // default active
+        if (window.scrollY < 180) {
+            currentSectionId = 'about'; // Default active is about
         }
 
         navLinks.forEach(link => {
@@ -122,7 +167,7 @@ function initScrollSpy() {
 }
 
 // ==========================================================================
-// KEYBOARD ACCESSIBILITY & ESCAPE CLOSE
+// KEYBOARD ACCESSIBILITY
 // ==========================================================================
 function initKeyboardAccessibility() {
     document.addEventListener('keydown', (e) => {

@@ -1,80 +1,68 @@
-# Project Portfolio | Aadith Thiruvangadan
-**Software Developer (CSE Graduate 2025)**  
-*Kannur, Kerala, India | aadiththiruvangadan@gmail.com | +91-9744345247 | [LinkedIn](https://linkedin.com/in/aadiththiruvangadan) | [GitHub](https://github.com/aadiththiruvangadan)*
+# Aadith Thiruvangadan
+**Software Developer | AI & Machine Learning Enthusiast**  
+Kannur, Kerala, India | aadiththiruvangadan@gmail.com | +91-9744345247  
+[LinkedIn](https://linkedin.com/in/aadiththiruvangadan) | [GitHub](https://github.com/aadiththiruvangadan)
 
 ---
 
 ## Professional Summary
-Motivated Software Developer with skills in Python, SQL, and web development, passionate about building efficient software solutions and continuously learning new technologies. Strong problem-solving abilities with a focus on delivering quality results.
+Motivated Software Developer with strong foundations in Python, Java, web frameworks, and relational databases. Experienced in developing computer vision pipelines (YOLO, OpenCV), building secure backend systems (Django, Flask), and normalising SQL schemas. Proven track record of end-to-end project ownership, rapid bug diagnostics, and designing production-ready features. Passionate about automating workflows and delivering high-impact solutions for product teams.
 
 ---
 
 ## Technical Skills
 
-*   **Programming Languages:** Python, C, SQL
-*   **Core Concepts:** Object-Oriented Programming (OOP), Data Structures, Algorithms
-*   **Web Development:** HTML, CSS, JavaScript, PHP
-*   **Frameworks/Databases:** Django, MySQL, Oracle SQL
-*   **Data Science & ML:** Scikit-learn, XGBoost, Pandas, NumPy, OpenCV
-*   **Tools:** Git, GitHub, Power BI, Excel, VS Code
+*   **Programming Languages:** Python, Java, C, SQL
+*   **Web Development:** Django, Flask, HTML, CSS, JavaScript
+*   **AI & Machine Learning:** YOLO (v3/v8), OpenCV, Machine Learning Fundamentals, Scikit-learn, Regression Analysis
+*   **Databases:** MySQL
+*   **Developer Tools:** Git, GitHub, VS Code, Android Studio, Power BI
 
 ---
 
-## Projects
+## Key Projects
 
-### Project 1: Detecting Humans in Search and Rescue
-*   **Problem Statement:** Search and rescue teams require automated assistance to monitor drones and surveillance video streams to spot survivors in real-time, reducing manual fatigue and increasing saving rates.
-*   **Solution Overview:** Developed a visual object tracking service deploying the YOLO model over OpenCV frames. Integrates with Django administrative dashboards and MySQL databases to log detections and route alerts to dispatch hubs.
-*   **Tech Stack:** Python, YOLO, OpenCV, Django, HTML, CSS, JavaScript
-*   **Individual Contribution & Details:**
-    *   Implemented real-time human detection using YOLO and OpenCV on live video streams for search-and-rescue applications.
-    *   Optimized model performance parameters, processing queues, and threshold limits to ensure faster and accurate detection.
-    *   Built the Django backend modules to save capture timestamps, GPS markers, and log events in MySQL database.
+### 1. Real-Time Human Detection for Search and Rescue Using YOLO
+*   **Description:** An automated computer vision system engineered to detect human survivors in disaster environments and route alert data to rescue teams.
+*   **Problem Statement:** Manual monitoring of surveillance streams during search and rescue is slow and fatiguing, delaying emergency dispatches. There is a critical need to automate real-time human detection to minimize response times.
+*   **Solution Overview:** Designed a pipeline running YOLO inference on OpenCV video frames. Detections trigger database updates (MySQL) and route push alerts to an Android mobile client mapping active survivor coordinate pins via Google Maps API.
+*   **Tech Stack:** Python, YOLOv3, OpenCV, Django, Android Studio (Java), Google Maps API, MySQL
+*   **Individual Contributions:**
+    *   Developed the capture-to-inference frame processing workflow in Python.
+    *   Integrated YOLO object classifier with OpenCV frames, tuning confidence thresholds (0.6) to reduce false positives in low-contrast conditions.
+    *   Designed Django administrative console module to manage incident logs and coordinator records.
+    *   Orchestrated database schema and structured SQL statements in MySQL to log active coordinates.
+    *   Managed testing, debugging, and multithreading optimization to prevent video frame ingestion lag.
 
-### Project 2: Payroll Management System
-*   **Problem Statement:** Spreadsheets and legacy ledger accounting tools are inefficient, prone to mathematical rounding errors, and vulnerable to access exploits by standard users.
-*   **Solution Overview:** Designed a secure full-stack PHP-MySQL web dashboard that automates gross/net tax calculations, provides secure login middleware, and hosts self-service panels for employees.
+### 2. Payroll Management System
+*   **Description:** A web-based application designed to automate salary distributions, tax calculations, and employee self-service access.
+*   **Problem Statement:** Manual payroll calculations on spreadsheets are prone to rounding errors, expose sensitive compensation data, and incur heavy administrative overhead.
+*   **Solution Overview:** Created a secure PHP web application that normalizes pay structures, automates dynamic salary/tax computations, and provides secure self-service access for employees to download payslips.
 *   **Tech Stack:** HTML, CSS, JavaScript, PHP, MySQL
-*   **Individual Contribution & Details:**
-    *   Developed a web-based application utilizing PHP scripts to automate salary processing and tax calculations.
+*   **Individual Contributions:**
+    *   Designed a normalized relational database schema in MySQL to store employee profiles and transaction history.
+    *   Built the backend routes and automated salary processing and tax calculations in PHP.
     *   Implemented secure employee self-service features restricting document access to authorized profiles.
-    *   Designed normalized MySQL schemas to store user log data and historical salary tables.
-
-### Project 3: YouTube Video Views Prediction using Machine Learning
-*   **Problem Statement:** Video creators and marketing agencies struggle to estimate structural view traffic ahead of publication. Establishing prediction metrics based on text attributes and expected likes optimizes digital release schedules.
-*   **Solution Overview:** Engineered a machine learning analysis workflow combining NLP text processing and ensemble decision trees. Numerical likes and text features parsed via TF-IDF are routed into an XGBoost regression algorithm.
-*   **Tech Stack:** Python, Scikit-learn, XGBoost, Pandas, NumPy
-*   **Individual Contribution & Details:**
-    *   Built ML model to predict video views using title and likes.
-    *   Performed data preprocessing, feature engineering, and text handling for title-based inputs.
-    *   Applied TF-IDF and feature engineering to convert raw titles into numerical weights.
-    *   Implemented an XGBoost regression model achieving strong prediction performance (81% accuracy).
-
-## Education & Training Timeline
-
-*   **Govt HSS Kannadiparamba** | Higher Secondary Education (HSC)  
-    *June 2019 &ndash; March 2021*  
-    Focus on Mathematics, Physics, Chemistry, and Computer Science fundamentals.
-
-*   **College Of Engineering Trikaripur** | B.Tech in Computer Science  
-    *November 2021 &ndash; April 2025*  
-    Specialized in Core Computer Science studies, including Data Structures, Algorithms, Object-Oriented Programming (OOP), Database Systems, and Machine Learning operations.
-
-*   **Pyspiders / Qspiders** | Python Fullstack and Data Science Training  
-    *July 2025 &ndash; March 2026*  
-    Intensive career training covering Core Python, Object-Oriented Programming (OOP), Django, REST APIs, HTML, CSS, JavaScript, Power BI, SQL, NumPy, Pandas, Statistics, and Machine Learning concepts.
+    *   Developed responsive HTML/CSS/JavaScript views for the administrative dashboard and employee panels.
+    *   Conducted diagnostics, input sanitization, and session handling to ensure data security and accuracy.
 
 ---
 
-## Certificates
+## Education & Professional Training
 
-*   **NPTEL:** Joy of Computing Using Python (IIT Madras)
-*   **Qspiders:** Python Full Stack and Data Science Certificate
+*   **B.Tech in Computer Science Engineering** | College Of Engineering Trikaripur  
+    *November 2021 – April 2025*  
+    *   Coursework: Data Structures, Algorithms, Database Systems, Object-Oriented Software Architecture.
+*   **Python Fullstack & Data Science Specialization** | PySpiders / QSpiders Specialist Center  
+    *July 2025 – March 2026*  
+    *   Intensive practical training covering Django, API routing, relational normalization, and machine learning pipelines.
+*   **Higher Secondary Education (HSC)** | Govt HSS Kannadiparamba  
+    *June 2019 – March 2021*  
+    *   Focus: Physics, Chemistry, Mathematics, and Computer Science.
 
 ---
 
-## Project Repositories
+## Professional Certifications
 
-*   **YouTube Video Views Predictor:** [github.com/aadiththiruvangadan/youtube_views_predictions](https://github.com/aadiththiruvangadan/youtube_views_predictions)
-*   **YOLO Search & Rescue Portal:** [github.com/aadiththiruvangadan/detecting-humans-in-search-and-rescue-operations-](https://github.com/aadiththiruvangadan/detecting-humans-in-search-and-rescue-operations-)
-*   **Payroll Management Portal:** [github.com/aadiththiruvangadan/Payroll-Management-System](https://github.com/aadiththiruvangadan/Payroll-Management-System)
+*   **Joy of Computing Using Python** (NPTEL - IIT Madras)
+*   **Python Fullstack and Data Science** (PySpiders / Qspiders)

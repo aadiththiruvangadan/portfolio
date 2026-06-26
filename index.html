@@ -3,21 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional Project Portfolio of Aadith Thiruvangadan, CSE Graduate specializing in Software Development, Web Development, and AI-ML. Highlighting systems in Machine Learning, Computer Vision, and Full-Stack Engineering.">
-    <title>Aadith Thiruvangadan | Software Developer Portfolio</title>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="description" content="Professional Recruiter Portfolio of Aadith Thiruvangadan, Software Developer and AI/ML Engineer. Showcasing AI Search & Rescue Systems, Payroll Automation, and System Design.">
+    <title>Aadith Thiruvangadan | Software Developer & AI Enthusiast Portfolio</title>
     
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Custom Style Sheet -->
-    <link rel="stylesheet" href="styles.css?v=1.2">
+    <link rel="stylesheet" href="styles.css?v=1.3">
 </head>
-<body class="dark-theme">
+<body class="light-theme">
     
     <!-- Theme Toggle Floating Button -->
     <button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle light and dark themes">
@@ -27,809 +22,1037 @@
     <!-- Header / Navigation -->
     <header class="header">
         <div class="nav-container">
-            <a href="#" class="logo">AT<span class="dot">.</span></a>
+            <a href="#" class="logo">Aadith<span>.</span></a>
             <nav class="nav-links">
                 <a href="#about" class="nav-link active">About</a>
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#projects" class="nav-link">Projects</a>
-                <a href="#training" class="nav-link">Education & Training</a>
+                <a href="#comparison" class="nav-link">Project Matrix</a>
+                <a href="#why-hire" class="nav-link">Why Hire Me</a>
+                <a href="#training" class="nav-link">Education</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </nav>
             <div class="header-actions">
-                <a href="Aadith_Thiruvangadan_Resume.pdf" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.85rem; margin-right: 0.5rem;">
-                    <i class="fa-solid fa-file-invoice"></i> PDF Resume
+                <a href="Aadith_Thiruvangadan_Resume.pdf" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
+                    <i class="fa-solid fa-file-invoice"></i> View Resume
                 </a>
-                <button id="print-portfolio-btn" class="btn btn-primary btn-print" onclick="window.print()" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
-                    <i class="fa-solid fa-file-pdf"></i> Export PDF
+                <button id="print-portfolio-btn" class="btn btn-primary" onclick="window.print()" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
+                    <i class="fa-solid fa-file-pdf"></i> Export as PDF
                 </button>
             </div>
         </div>
     </header>
 
-    <main class="portfolio-container">
+    <main class="main-content">
         
-        <!-- Hero Section -->
+        <!-- Hero / Cover Section -->
         <section id="hero" class="hero-section">
+    <div class="portfolio-container">
+
             <div class="hero-grid">
                 <div class="hero-content">
-                    <span class="badge">B.Tech CSE Graduate (2025)</span>
+                    <span class="badge"><i class="fa-solid fa-graduation-cap"></i> B.Tech CSE Graduate</span>
                     <h1 class="hero-title">Aadith Thiruvangadan</h1>
-                    <h2 class="hero-subtitle">Software Developer</h2>
+                    <h2 class="hero-subtitle">Software Developer | AI & Machine Learning Enthusiast</h2>
                     <p class="hero-desc">
-                        Motivated Software Developer with skills in Python, SQL, and web development. Passionate about building efficient software solutions, designing systems, and continuously learning new technologies. Strong problem-solving abilities with a focus on delivering quality results.
+                        Building intelligent software solutions that combine AI, automation, and real-world problem solving. Focused on writing robust, production-oriented code and designing scalable architectures.
                     </p>
                     <div class="hero-actions">
-                        <a href="#projects" class="btn btn-primary">View Projects</a>
-                        <a href="Aadith_Thiruvangadan_Resume.pdf" target="_blank" class="btn btn-secondary">
-                            <i class="fa-solid fa-file-invoice"></i> Access Resume PDF
-                        </a>
+                        <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-code-branch"></i> View Projects</a>
+                        <a href="Aadith_Thiruvangadan_Resume.pdf" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-file-invoice"></i> View Resume</a>
+                    </div>
+                    <div class="skills-snapshot">
+                        <span class="skills-snapshot-title">Core Skills Overview</span>
+                        <div class="skills-snapshot-list">
+                            <span class="skills-snapshot-tag">Python</span>
+                            <span class="skills-snapshot-tag">Java</span>
+                            <span class="skills-snapshot-tag">Django</span>
+                            <span class="skills-snapshot-tag">YOLO</span>
+                            <span class="skills-snapshot-tag">OpenCV</span>
+                            <span class="skills-snapshot-tag">MySQL</span>
+                            <span class="skills-snapshot-tag">System Design</span>
+                        </div>
                     </div>
                 </div>
                 <div class="hero-visual">
                     <div class="profile-card">
                         <div class="profile-img-container">
-                            <img src="assets/avatar.jpg" alt="Aadith Thiruvangadan Profile" class="profile-img" id="profile-img">
+                            <img src="assets/aadith_photo.jpg" alt="Aadith Thiruvangadan" class="profile-img">
                         </div>
                         <div class="profile-info">
                             <div class="info-item">
                                 <i class="fa-solid fa-envelope"></i>
-                                <span>aadiththiruvangadan@gmail.com</span>
+                                <a href="mailto:aadiththiruvangadan@gmail.com">aadiththiruvangadan@gmail.com</a>
                             </div>
                             <div class="info-item">
                                 <i class="fa-solid fa-phone"></i>
-                                <span>+91-9744345247</span>
+                                <a href="tel:+919744345247">+91-9744345247</a>
                             </div>
                             <div class="info-item">
                                 <i class="fa-solid fa-location-dot"></i>
                                 <span>Kannur, Kerala, India</span>
                             </div>
                             <div class="info-socials">
-                                <a href="https://github.com/aadiththiruvangadan" target="_blank" id="github-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                                <a href="https://linkedin.com/in/aadiththiruvangadan" target="_blank" id="linkedin-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/aadiththiruvangadan" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://linkedin.com/in/aadiththiruvangadan" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        
+    </div>
+</section>
 
         <!-- About Me Section -->
-        <section id="about" class="about-section scroll-spy">
-            <h2 class="section-title">About Me</h2>
+        <section id="about" class="scroll-spy">
+    <div class="portfolio-container">
+
+            <div class="section-title-wrapper">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">A quick introduction to my engineering background, core philosophies, and alignment with modern software demands.</p>
+            </div>
             <div class="about-card">
                 <div class="about-text-content">
                     <p>
-                        I am a Computer Science and Engineering graduate (Class of 2025) with a strong foundation in modern software engineering practices. My expertise spans Python development, relational database queries, full-stack web applications, and artificial intelligence implementations.
+                        I am a Computer Science Engineering graduate with a robust technical foundation in programming, web architecture, and computer vision models. My focus revolves around building reliable software platforms that utilize machine learning, automation pipelines, and optimized databases to solve critical business and public-safety problems.
                     </p>
                     <p>
-                        I specialize in applying machine learning algorithms to practical problems, building clean user-centered web applications, and normalising database structures. I bring strong analytical thinking, self-reliance, and a commitment to writing clean, maintainable code to every engineering team.
+                        I adopt a rigorous, problem-solving mindset when designing software systems: prioritizing clean structural designs, normalising database tables, and building secure session authentications. Driven by a continuous learning approach, I stay updated on artificial intelligence developments and software engineering best practices, making me ready to integrate and contribute effectively within cross-functional product development teams.
                     </p>
+                    
                     <div class="engineering-values">
                         <div class="value-item">
-                            <div class="value-icon"><i class="fa-solid fa-code"></i></div>
-                            <h4>Clean Architecture</h4>
-                            <p>Striving for modular, maintainable code with clear division of concerns.</p>
+                            <div class="value-icon"><i class="fa-solid fa-cubes"></i></div>
+                            <h4>AI & Automation Focus</h4>
+                            <p>Leveraging deep learning and computer vision (YOLO, OpenCV) to replace manual monitoring with rapid detection scripts.</p>
                         </div>
                         <div class="value-item">
                             <div class="value-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                            <h4>Robust Engineering</h4>
-                            <p>Designing secure, normalized database schemas and reliable session mechanisms.</p>
+                            <h4>Secure & Stable Backend</h4>
+                            <p>Writing secure, clean Django, Flask, or OOP architectures protecting data consistency and user sessions.</p>
                         </div>
                         <div class="value-item">
-                            <div class="value-icon"><i class="fa-solid fa-gauge-high"></i></div>
-                            <h4>Performance-Driven</h4>
-                            <p>Optimizing real-time processing threads and heavy database query operations.</p>
+                            <div class="value-icon"><i class="fa-solid fa-users-viewfinder"></i></div>
+                            <h4>Collaboration & Execution</h4>
+                            <p>Committed to end-to-end project ownership, proactive debugging, and writing clear technical documentation for team velocity.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        
+    </div>
+</section>
 
         <!-- Technical Skills Section -->
-        <section id="skills" class="skills-section scroll-spy">
-            <h2 class="section-title">Technical Skills</h2>
+        <section id="skills" class="scroll-spy">
+    <div class="portfolio-container">
+
+            <div class="section-title-wrapper">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Categorized skills indicating my technical competencies in languages, frameworks, AI operations, and developer tooling.</p>
+            </div>
             <div class="skills-grid">
                 
                 <div class="skills-card">
-                    <h3><i class="fa-solid fa-terminal"></i> Programming Languages</h3>
+                    <h3><i class="fa-solid fa-code"></i> Programming Languages</h3>
                     <div class="skills-list">
-                        <div class="skill-tag">Python</div>
-                        <div class="skill-tag">C</div>
-                        <div class="skill-tag">SQL</div>
-                    </div>
-                    <h3 style="margin-top: 1.5rem;"><i class="fa-solid fa-diagram-project"></i> Core Concepts</h3>
-                    <div class="skills-list">
-                        <div class="skill-tag">Object-Oriented Programming (OOP)</div>
-                        <div class="skill-tag">Data Structures</div>
-                        <div class="skill-tag">Algorithms</div>
-                    </div>
-                </div>
-
-                <div class="skills-card">
-                    <h3><i class="fa-solid fa-brain"></i> Data Science & ML</h3>
-                    <div class="skills-list">
-                        <div class="skill-tag">Scikit-learn</div>
-                        <div class="skill-tag">XGBoost</div>
-                        <div class="skill-tag">Pandas</div>
-                        <div class="skill-tag">NumPy</div>
-                        <div class="skill-tag">OpenCV</div>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">SQL</span>
                     </div>
                 </div>
 
                 <div class="skills-card">
                     <h3><i class="fa-solid fa-globe"></i> Web Development</h3>
                     <div class="skills-list">
-                        <div class="skill-tag">HTML</div>
-                        <div class="skill-tag">CSS</div>
-                        <div class="skill-tag">JavaScript</div>
-                        <div class="skill-tag">PHP</div>
-                    </div>
-                    <h3 style="margin-top: 1.5rem;"><i class="fa-solid fa-database"></i> Frameworks & Databases</h3>
-                    <div class="skills-list">
-                        <div class="skill-tag">Django</div>
-                        <div class="skill-tag">MySQL</div>
-                        <div class="skill-tag">Oracle SQL</div>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Flask</span>
                     </div>
                 </div>
 
                 <div class="skills-card">
-                    <h3><i class="fa-solid fa-screwdriver-wrench"></i> Developer Tools</h3>
+                    <h3 class="emerald-header"><i class="fa-solid fa-brain"></i> AI & Machine Learning</h3>
                     <div class="skills-list">
-                        <div class="skill-tag">Git</div>
-                        <div class="skill-tag">GitHub</div>
-                        <div class="skill-tag">Power BI</div>
-                        <div class="skill-tag">Excel</div>
-                        <div class="skill-tag">VS Code</div>
+                        <span class="skill-tag emerald-tag">YOLO (v3/v8)</span>
+                        <span class="skill-tag emerald-tag">OpenCV</span>
+                        <span class="skill-tag emerald-tag">Machine Learning Fundamentals</span>
+                        <span class="skill-tag emerald-tag">Scikit-learn</span>
+                        <span class="skill-tag emerald-tag">Regression Analysis</span>
+                    </div>
+                </div>
+
+                <div class="skills-card">
+                    <h3><i class="fa-solid fa-database"></i> Databases & Tools</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Android Studio</span>
+                        <span class="skill-tag">Power BI</span>
                     </div>
                 </div>
 
             </div>
-        </section>
+        
+    </div>
+</section>
 
         <!-- Projects Section -->
-        <section id="projects" class="projects-section scroll-spy">
-            <h2 class="section-title">Projects</h2>
+        <section id="projects" class="scroll-spy">
+    <div class="portfolio-container">
+
+            <div class="section-title-wrapper projects-title-container">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Deep dive into production-grade systems showing end-to-end implementation quality, system design, and measurable impact.</p>
+            </div>
             
-            <!-- Project 1: Detecting Humans in Search and Rescue -->
-            <div class="project-content-wrapper active" id="project-1-content">
+            <!-- Project 1: Real-Time Human Detection AI -->
+            <div class="project-content-wrapper" id="project-1">
                 <div class="project-info-header">
-                    <span class="project-category">Computer Vision & Object Detection</span>
-                    <h3>Detecting Humans in Search and Rescue</h3>
-                    <p class="project-subtitle">Real-time object classification framework engineered to detect human survivors in disaster environments and route notifications to field rescue units.</p>
+                    <span class="project-category">AI / Computer Vision & Systems Engineering</span>
+                    <h3>Real-Time Human Detection for Search and Rescue Using YOLO</h3>
+                    <p class="project-subtitle">An automated computer vision surveillance system built to expedite human detection in critical disaster scenarios and coordinate rescue dispatches via active alert logs.</p>
                 </div>
 
                 <div class="project-main-grid">
                     <div class="project-details">
-                        <!-- Problem & Solution -->
+                        <!-- 1. Problem Statement -->
                         <div class="detail-block">
-                            <h4><i class="fa-solid fa-circle-exclamation"></i> Problem Statement</h4>
-                            <p>Searching for survivors after natural disasters manually over vast camera feeds delays localized help, risking lives during the vital early rescue hours.</p>
+                            <h4><i class="fa-solid fa-circle-exclamation"></i> 1. Problem Statement</h4>
+                            <p>
+                                Traditional search and rescue operations face immense logistical delays due to manual searching in vast disaster environments. Fatigued rescue workers must parse hours of camera feeds manually, leading to oversight and slow response times. Reducing the turnaround time from initial visual sighting to local rescue unit dispatch is a critical factor in saving lives. There is an urgent need for an automated, fast, and highly accurate human detection system that alerts rescue teams in real-time.
+                            </p>
                         </div>
                         
+                        <!-- 2. Solution Overview -->
                         <div class="detail-block">
-                            <h4><i class="fa-solid fa-circle-check"></i> Solution Overview</h4>
-                            <p>Designed a unified solution that runs YOLO inference on video capture frames. If a human object is classified, coordinate details and image logs are updated in a MySQL db and routed through Django web gateways as mobile alerts.</p>
+                            <h4><i class="fa-solid fa-circle-check"></i> 2. Solution Overview</h4>
+                            <p>
+                                Engineered an AI-powered human detection framework combining high-speed computer vision model inference with active web and mobile notifier pipelines. The system processes live camera capture streams, routes frames through a localized YOLO detection engine, validates human sightings, and stores detection metadata in a MySQL database. Django web backend administrators track survivor coordinates and dispatch alerts directly to rescue teams on the ground through a integrated mobile app interface.
+                            </p>
+                            <div class="features-grid">
+                                <div class="feature-item-card">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <div>
+                                        <h5>Real-time Human Detection</h5>
+                                        <p>Sub-second frame processing with YOLO to isolate human coordinates.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item-card">
+                                    <i class="fa-solid fa-bell"></i>
+                                    <div>
+                                        <h5>Automated Alerts</h5>
+                                        <p>Instant alert notifications generated upon positive validation of survivor status.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item-card">
+                                    <i class="fa-solid fa-users"></i>
+                                    <div>
+                                        <h5>Rescue Management</h5>
+                                        <p>Consolidated administrative dashboard for dispatching rescue teams.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item-card">
+                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                    <div>
+                                        <h5>Mobile Sync Integration</h5>
+                                        <p>Mobile platform interface mapping coordinates with Google Maps API.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <!-- Contribution -->
+                        <!-- 4. Individual Contribution -->
                         <div class="detail-block">
-                            <h4><i class="fa-solid fa-user-gear"></i> Individual Contribution</h4>
-                            <ul class="contribution-list">
-                                <li>Implemented real-time human detection using YOLO and OpenCV on live video streams for search-and-rescue applications.</li>
-                                <li>Optimized model performance parameters, threshold filters, and frame scaling to ensure faster and accurate detection rates.</li>
-                                <li>Configured Django backend services to log detection instances and host the administrative map console.</li>
-                                <li>Participated in mobile integration tests ensuring spatial markers sync accurately.</li>
+                            <h4><i class="fa-solid fa-user-check"></i> 4. Individual Contribution</h4>
+                            <div class="contribution-list">
+                                <div class="contribution-item">
+                                    <strong>Developed Detection Workflow:</strong>
+                                    <p>Engineered the frame-ingestion script logic to capture camera feed buffers and load frame layers sequentially.</p>
+                                </div>
+                                <div class="contribution-item">
+                                    <strong>YOLO & OpenCV Integration:</strong>
+                                    <p>Configured YOLO weights inside OpenCV DNN framework, tuning probability filtering to minimize incorrect human labels.</p>
+                                </div>
+                                <div class="contribution-item">
+                                    <strong>Django Admin Modules:</strong>
+                                    <p>Designed the database-backed logging dashboard with administrative control options using Django frameworks.</p>
+                                </div>
+                                <div class="contribution-item">
+                                    <strong>Database Interactions:</strong>
+                                    <p>Formulated normalized MySQL tables for survivor location, alert logs, and operational teams logs.</p>
+                                </div>
+                                <div class="contribution-item">
+                                    <strong>Mobile Sync Support:</strong>
+                                    <p>Built XML interface hooks in Android Studio to parse coordinates received from the web database, showing exact marker pins on Google Maps.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 5. Technology Stack -->
+                        <div class="detail-block">
+                            <h4><i class="fa-solid fa-layer-group"></i> 5. Technology Stack</h4>
+                            <table class="comparison-table" style="font-size: 0.9rem;">
+                                <thead>
+                                    <tr>
+                                        <th>Layer</th>
+                                        <th>Technology</th>
+                                        <th>Role / Function</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>AI Core Model</strong></td>
+                                        <td>YOLOv3 Model</td>
+                                        <td>Deep learning object detection for survivor recognition</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Computer Vision</strong></td>
+                                        <td>OpenCV Library</td>
+                                        <td>Frame rendering, ingestion streams, and pre-processing</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Web Backend</strong></td>
+                                        <td>Django Framework</td>
+                                        <td>Database logging, administrative consoles, and api routes</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Mobile Development</strong></td>
+                                        <td>Android Studio (Java)</td>
+                                        <td>Mobile application for search and rescue ground crews</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>API Integrations</strong></td>
+                                        <td>Google Maps & Razorpay</td>
+                                        <td>Location mapping trackers & donation transaction gateways</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Database Layer</strong></td>
+                                        <td>MySQL Database</td>
+                                        <td>Persisting logs, coordinates metadata, and user accounts</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- 6. Challenges & Learnings -->
+                        <div class="detail-block">
+                            <h4><i class="fa-solid fa-lightbulb"></i> 6. Challenges & Learnings</h4>
+                            <div class="challenges-grid" style="grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                                <div class="challenge-card">
+                                    <span class="challenge-num">01</span>
+                                    <h5>Contrast & False Positives</h5>
+                                    <p><strong>Challenge:</strong> Processing frames from environments with thick smoke or shadows resulted in missing survivors or mislabeling debris.</p>
+                                    <p><strong>Solution:</strong> Incorporated pre-inference frame contrast enhancement (contrast stretching via OpenCV) and tuned YOLO confidence thresholds to a balanced 0.6.</p>
+                                </div>
+                                <div class="challenge-card">
+                                    <span class="challenge-num">02</span>
+                                    <h5>Ingestion Stream Latency</h5>
+                                    <p><strong>Challenge:</strong> Running YOLO object inference sequentially on the UI thread locked the camera playback frame rate.</p>
+                                    <p><strong>Solution:</strong> Restructured code into a producer-consumer thread queue model, separating video ingestion threads from the detection model execution block.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 7. Impact & Results -->
+                        <div class="detail-block">
+                            <h4><i class="fa-solid fa-chart-line"></i> 7. Impact & Results</h4>
+                            <p>
+                                The implemented AI model provides a robust proof-of-concept for search and rescue monitoring centers:
+                            </p>
+                            <ul class="contribution-list" style="border-left: none; padding-left: 0;">
+                                <li style="position: relative; padding-left: 1.5rem;"><i class="fa-solid fa-check" style="position: absolute; left: 0; color: var(--accent-emerald);"></i> <strong>Improved Detection Efficiency:</strong> Replaced continuous manual visual monitoring with automated alerts.</li>
+                                <li style="position: relative; padding-left: 1.5rem;"><i class="fa-solid fa-check" style="position: absolute; left: 0; color: var(--accent-emerald);"></i> <strong>Reduced Response Lag:</strong> Alerts are routed automatically within seconds of model identification.</li>
+                                <li style="position: relative; padding-left: 1.5rem;"><i class="fa-solid fa-check" style="position: absolute; left: 0; color: var(--accent-emerald);"></i> <strong>Automated Incident Logging:</strong> Historical search runs are documented automatically in relational SQL blocks for debriefing audits.</li>
                             </ul>
                         </div>
                     </div>
 
+                    <!-- Sidebar Info -->
                     <div class="project-sidebar">
-                        <!-- Tech Stack -->
                         <div class="sidebar-box">
-                            <h4>Tech Stack</h4>
+                            <h4>Technologies Used</h4>
                             <div class="tech-tags">
                                 <span class="tag">Python</span>
-                                <span class="tag">YOLO</span>
+                                <span class="tag">YOLOv3</span>
                                 <span class="tag">OpenCV</span>
                                 <span class="tag">Django</span>
-                                <span class="tag">HTML</span>
-                                <span class="tag">CSS</span>
-                                <span class="tag">JavaScript</span>
+                                <span class="tag">Java</span>
+                                <span class="tag">Android Studio</span>
+                                <span class="tag">MySQL</span>
                             </div>
                         </div>
 
-                        <!-- Impact Metrics -->
-                        <div class="sidebar-box metric-box">
-                            <h4>Measurable Impact</h4>
+                        <div class="sidebar-box">
+                            <h4>Key Metrics Accomplished</h4>
                             <div class="metric-grid">
                                 <div class="metric-card">
-                                    <span class="metric-num">YOLO</span>
-                                    <span class="metric-label">High-Speed Object Detection</span>
+                                    <span class="metric-num">YOLOv3</span>
+                                    <span class="metric-label">High-Speed Object Parser</span>
                                 </div>
                                 <div class="metric-card">
                                     <span class="metric-num">OpenCV</span>
-                                    <span class="metric-label">Efficient Frame Processing</span>
-                                </div>
-                                <div class="metric-card">
-                                    <span class="metric-num">Real-Time</span>
-                                    <span class="metric-label">Instant Rescue Dispatch Logs</span>
+                                    <span class="metric-label">Decoupled Frame Queues</span>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Demo Screenshot Link -->
                         <div class="sidebar-box demo-box">
-                            <h4>Visual Mockup</h4>
-                            <div class="screenshot-container" onclick="openModal('assets/search_rescue_demo.jpg', 'Search and Rescue Computer Vision Interface showing YOLO bounding boxes on thermal survivor feed.')">
-                                <img src="assets/search_rescue_demo.jpg" alt="Search and Rescue Demo Capture" class="screenshot-thumbnail">
-                                <div class="screenshot-overlay">
-                                    <i class="fa-solid fa-expand"></i> View Mockup
-                                </div>
+                            <h4>8. Screenshots & Diagrams</h4>
+                            <!-- Real JPG showing Admin Login Page -->
+                            <div class="screenshot-container" style="margin-bottom: 1rem;">
+                                <img src="assets/search_rescue_admin_login.jpg" alt="Search & Rescue Admin Login Screen" class="screenshot-thumbnail">
+                                <div class="screenshot-overlay"><i class="fa-solid fa-expand"></i> View Screenshot</div>
                             </div>
-                            <span class="caption">YOLO survivor feed tracking mockup</span>
+                            <!-- Real JPG showing Mobile App Human Detection -->
+                            <div class="screenshot-container" style="margin-bottom: 1rem;">
+                                <img src="assets/search_rescue_detection.jpg" alt="Rescue Team App - Human Detection Screen" class="screenshot-thumbnail">
+                                <div class="screenshot-overlay"><i class="fa-solid fa-expand"></i> View Screenshot</div>
+                            </div>
+                            <span class="caption">Mockups: Admin Login Screen (Top) & Rescue Team Mobile App Detection Screen (Bottom)</span>
+                        </div>
+
+                        <div class="sidebar-box">
+                            <h4>9. Project Links</h4>
+                            <div style="display: flex; flex-direction: column; gap: 0.50rem;">
+                                <a href="https://github.com/aadiththiruvangadan/detecting-humans-in-search-and-rescue-operations-" target="_blank" style="font-weight: 600;"><i class="fa-brands fa-github"></i> GitHub Repository</a>
+                                <a href="#" style="font-weight: 600; color: var(--text-muted); cursor: not-allowed;"><i class="fa-solid fa-file-lines"></i> Project Documentation</a>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-box">
+                            <h4>10. Live Demo / Walkthrough</h4>
+                            <div style="display: flex; flex-direction: column; gap: 0.50rem;">
+                                <a href="#" style="font-weight: 600; color: var(--text-muted); cursor: not-allowed;"><i class="fa-solid fa-circle-play"></i> Launch Live Demo</a>
+                                <a href="#" style="font-weight: 600; color: var(--text-muted); cursor: not-allowed;"><i class="fa-solid fa-video"></i> Video Walkthrough</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Architecture & Workflow Diagrams -->
+                <!-- 3. Technical Architecture Section -->
                 <div class="diagram-section">
-                    <h4>Technical Architecture & Flow</h4>
+                    <h4><i class="fa-solid fa-sitemap"></i> 3. Technical Architecture & System Flow</h4>
                     <div class="diagram-container">
-                        <!-- SVG Architecture Diagram 2 -->
+                        <!-- Custom SVG Flowchart -->
                         <svg class="interactive-diagram" viewBox="0 0 800 240" xmlns="http://www.w3.org/2000/svg">
-                            <!-- Node 1: Video Capture -->
-                            <g class="diagram-node" transform="translate(40, 70)">
-                                <rect width="110" height="90" rx="10" fill="url(#blueGrad)" stroke="#4ba3ff" stroke-width="2"/>
-                                <text x="55" y="40" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="12" fill="#fff">Video Stream</text>
-                                <text x="55" y="60" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#a5c8ff">(OpenCV Capture)</text>
-                                <circle cx="55" cy="18" r="8" fill="#ff4d4d"/>
+                            <defs>
+                                <linearGradient id="gradient-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#3b82f6" />
+                                    <stop offset="100%" stop-color="#1d4ed8" />
+                                </linearGradient>
+                                <linearGradient id="gradient-indigo" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#4f46e5" />
+                                    <stop offset="100%" stop-color="#3730a3" />
+                                </linearGradient>
+                                <linearGradient id="gradient-emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#10b981" />
+                                    <stop offset="100%" stop-color="#047857" />
+                                </linearGradient>
+                                <marker id="arrowhead" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                    <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+                                </marker>
+                            </defs>
+
+                            <!-- Node 1: Camera Feed -->
+                            <g class="diagram-node" transform="translate(10, 80)">
+                                <rect width="100" height="70" rx="8" fill="url(#gradient-blue)" stroke="#93c5fd" stroke-width="1.5"/>
+                                <text x="50" y="32" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="700" font-size="11" fill="#ffffff">Camera Feed</text>
+                                <text x="50" y="48" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#dbeafe">(Ingestion stream)</text>
                             </g>
 
-                            <!-- Arrow 1 -->
-                            <path d="M 150 115 L 180 115" stroke="#4ba3ff" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+                            <path d="M 110 115 L 130 115" stroke="#64748b" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
 
-                            <!-- Node 2: YOLO Model -->
-                            <g class="diagram-node" transform="translate(190, 70)">
-                                <rect width="110" height="90" rx="10" fill="url(#purpleGrad)" stroke="#b673ff" stroke-width="2"/>
-                                <text x="55" y="40" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="12" fill="#fff">YOLO Model</text>
-                                <text x="55" y="60" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#dfc5ff">(Object Classification)</text>
+                            <!-- Node 2: OpenCV Processing -->
+                            <g class="diagram-node" transform="translate(140, 80)">
+                                <rect width="110" height="70" rx="8" fill="url(#gradient-blue)" stroke="#93c5fd" stroke-width="1.5"/>
+                                <text x="55" y="32" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="700" font-size="11" fill="#ffffff">OpenCV Core</text>
+                                <text x="55" y="48" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#dbeafe">(Pre-processing)</text>
                             </g>
 
-                            <!-- Arrow 2 -->
-                            <path d="M 300 115 L 330 115" stroke="#b673ff" stroke-width="3" fill="none"/>
+                            <path d="M 250 115 L 270 115" stroke="#64748b" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
 
-                            <!-- Node 3: Django Backend -->
-                            <g class="diagram-node" transform="translate(340, 70)">
-                                <rect width="120" height="90" rx="10" fill="url(#tealGrad)" stroke="#39f3bb" stroke-width="2"/>
-                                <text x="60" y="40" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="12" fill="#fff">Django Server</text>
-                                <text x="60" y="60" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#baffeb">(Alerts Router)</text>
+                            <!-- Node 3: YOLO Detection -->
+                            <g class="diagram-node" transform="translate(280, 80)">
+                                <rect width="110" height="70" rx="8" fill="url(#gradient-indigo)" stroke="#c7d2fe" stroke-width="1.5"/>
+                                <text x="55" y="32" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="700" font-size="11" fill="#ffffff">YOLO Engine</text>
+                                <text x="55" y="48" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#e0e7ff">(Object Classifier)</text>
                             </g>
 
-                            <!-- Arrow 3 (Split path to DB and Mobile App) -->
-                            <path d="M 460 100 L 510 60" stroke="#39f3bb" stroke-width="3" fill="none"/>
-                            <path d="M 460 130 L 510 170" stroke="#39f3bb" stroke-width="3" fill="none"/>
+                            <path d="M 390 115 L 410 115" stroke="#64748b" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
 
-                            <!-- Node 4: MySQL Database -->
-                            <g class="diagram-node" transform="translate(520, 20)">
-                                <rect width="110" height="70" rx="10" fill="#1b2a47" stroke="#4ba3ff" stroke-width="2"/>
-                                <text x="55" y="35" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="12" fill="#fff">MySQL DB</text>
-                                <text x="55" y="52" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#a5c8ff">(Logs & Metadata)</text>
+                            <!-- Node 4: Validation & Filter -->
+                            <g class="diagram-node" transform="translate(420, 80)">
+                                <rect width="110" height="70" rx="8" fill="url(#gradient-indigo)" stroke="#c7d2fe" stroke-width="1.5"/>
+                                <text x="55" y="32" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="700" font-size="11" fill="#ffffff">Validation</text>
+                                <text x="55" y="48" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#e0e7ff">(Confidence Filter)</text>
                             </g>
 
-                            <!-- Node 5: Android Application -->
-                            <g class="diagram-node" transform="translate(520, 140)">
-                                <rect width="110" height="80" rx="10" fill="#1b2a47" stroke="#39f3bb" stroke-width="2"/>
-                                <text x="55" y="35" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="12" fill="#fff">Android App</text>
-                                <text x="55" y="52" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#baffeb">(Rescue Team)</text>
-                                <text x="55" y="65" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#00cdac">Google Maps API</text>
+                            <path d="M 530 115 L 550 115" stroke="#64748b" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+
+                            <!-- Node 5: Django Server -->
+                            <g class="diagram-node" transform="translate(560, 50)">
+                                <rect width="100" height="60" rx="8" fill="url(#gradient-emerald)" stroke="#a7f3d0" stroke-width="1.5"/>
+                                <text x="50" y="28" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="700" font-size="11" fill="#ffffff">Django Admin</text>
+                                <text x="50" y="42" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#d1fae5">(Web Console)</text>
                             </g>
 
-                            <!-- Arrow 4 (Mobile app and DB Sync / Map tracking details) -->
-                            <path d="M 630 180 L 680 180" stroke="#39f3bb" stroke-width="2" stroke-dasharray="4" fill="none"/>
-                            
-                            <!-- Node 6: Location Tracking -->
-                            <g class="diagram-node" transform="translate(690, 145)">
-                                <circle cx="35" cy="35" r="30" fill="#0d1b2a" stroke="#ff4d4d" stroke-width="2"/>
-                                <text x="35" y="38" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#ff4d4d" font-weight="600">GeoGPS</text>
+                            <!-- Node 6: Mobile App -->
+                            <g class="diagram-node" transform="translate(560, 130)">
+                                <rect width="100" height="60" rx="8" fill="url(#gradient-emerald)" stroke="#a7f3d0" stroke-width="1.5"/>
+                                <text x="50" y="28" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="700" font-size="11" fill="#ffffff">Android Crew</text>
+                                <text x="50" y="42" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#d1fae5">(Mobile Client)</text>
                             </g>
+
+                            <!-- Splits -->
+                            <path d="M 530 115 L 560 80" stroke="#64748b" stroke-width="1.5" fill="none"/>
+                            <path d="M 530 115 L 560 160" stroke="#64748b" stroke-width="1.5" fill="none"/>
+
+                            <!-- Node 7: MySQL DB -->
+                            <g class="diagram-node" transform="translate(680, 90)">
+                                <rect width="100" height="60" rx="8" fill="#1e293b" stroke="#cbd5e1" stroke-width="1.5"/>
+                                <text x="50" y="28" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="700" font-size="11" fill="#ffffff">MySQL DB</text>
+                                <text x="50" y="42" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8">(Incident Database)</text>
+                            </g>
+
+                            <!-- DB pathways -->
+                            <path d="M 660 80 L 680 110" stroke="#64748b" stroke-width="1.5" fill="none"/>
+                            <path d="M 660 160 L 680 130" stroke="#64748b" stroke-width="1.5" fill="none"/>
                         </svg>
-                        <span class="caption">Real-time Data Flow Pipeline: Capture &rarr; Detection Inference &rarr; Alert Dispatch</span>
-                    </div>
-                </div>
-
-                <!-- Challenges & Learnings -->
-                <div class="challenges-section">
-                    <h4>Challenges & Learnings</h4>
-                    <div class="challenges-grid">
-                        <div class="challenge-card">
-                            <span class="challenge-num">01</span>
-                            <h5>Improving Detection Accuracy</h5>
-                            <p><strong>Challenge:</strong> Initial testing experienced false positives on objects under low-contrast conditions (dust, shadows).</p>
-                            <p><strong>Solution:</strong> Tuned YOLO confidence thresholds and optimized input frame contrast via OpenCV histogram equalization before submitting frames to inference.</p>
-                        </div>
-                        <div class="challenge-card">
-                            <span class="challenge-num">02</span>
-                            <h5>Handling Real-Time Video Latency</h5>
-                            <p><strong>Challenge:</strong> Processing sequential frames locked the main execution thread, causing severe UI delay and lag.</p>
-                            <p><strong>Solution:</strong> Deployed a producer-consumer thread architecture. The capture stream runs on a separate worker thread feeding a queue, decoupling visual processing from ingestion.</p>
-                        </div>
-                        <div class="challenge-card">
-                            <span class="challenge-num">03</span>
-                            <h5>Web & Mobile Module Integration</h5>
-                            <p><strong>Challenge:</strong> Ensuring secure, real-time alert routing between Django and the Android client without battery depletion.</p>
-                            <p><strong>Solution:</strong> Established a lightweight JSON-over-HTTP polling sync mechanism with dynamic polling intervals based on location change frequency.</p>
-                        </div>
+                        <span class="caption">Real-Time Search & Rescue Pipeline: Local Frame Streaming &rarr; AI Detection Inference &rarr; Multi-Gateway Alert Routing</span>
                     </div>
                 </div>
             </div>
 
             <!-- Project 2: Payroll Management System -->
-            <div class="project-content-wrapper active" id="project-2-content">
+            <div class="project-content-wrapper" id="project-2">
                 <div class="project-info-header">
-                    <span class="project-category">Full-Stack Web Application</span>
-                    <h3>Payroll Management System</h3>
+                    <span class="project-category">Enterprise Software & Web Architecture</span>
+                    <h3>Automated Payroll Management System</h3>
                     <p class="project-subtitle">A web-based administration application built to automate organizational salary distribution and tax calculations while providing secure self-service modules.</p>
                 </div>
 
                 <div class="project-main-grid">
                     <div class="project-details">
-                        <!-- Problem & Solution -->
+                        <!-- 1. Problem Statement -->
                         <div class="detail-block">
-                            <h4><i class="fa-solid fa-circle-exclamation"></i> Problem Statement</h4>
-                            <p>Organizations waste significant administrative hours calculating salaries, pro-rating tax deductions, and issuing payslips manually, while exposing sensitive financial records to structural leaks.</p>
+                            <h4><i class="fa-solid fa-circle-exclamation"></i> 1. Problem Statement</h4>
+                            <p>
+                                Manual payroll calculation is highly prone to human error, resulting in incorrect financial audits, delayed salary distribution, and compliance issues with local tax rules. Traditional spreadsheet-based ledger systems are tedious, difficult to scale, and fail to provide employees with immediate transparency regarding components like gross salary, deductions, and tax exemptions. Moreover, distributing sensitive financial details on insecure sheets exposes organizations to data leaks.
+                            </p>
                         </div>
                         
+                        <!-- 2. Solution Overview -->
                         <div class="detail-block">
-                            <h4><i class="fa-solid fa-circle-check"></i> Solution Overview</h4>
-                            <p>Developed a full-stack PHP-MySQL platform. The backend computes gross/net values based on local tax rules, HR controls log details, and a secure employee self-service portal lets employees view invoices.</p>
+                            <h4><i class="fa-solid fa-circle-check"></i> 2. Solution Overview</h4>
+                            <p>
+                                Created a secure, web-based administrative portal engineered to automate ledger distribution, compute gross/net salaries based on pro-rated attendance data, and host employee self-service facilities. Admin users can generate monthly payroll logs, update baseline salary brackets, and review operational metrics. Employees can log in securely using password credentials to access historical invoices, download payslips, and review individual profiles.
+                            </p>
+                            <div class="features-grid">
+                                <div class="feature-item-card">
+                                    <i class="fa-solid fa-address-card"></i>
+                                    <div>
+                                        <h5>Employee Records</h5>
+                                        <p>Centralized ledger mapping base compensation details and personal information.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item-card">
+                                    <i class="fa-solid fa-calculator"></i>
+                                    <div>
+                                        <h5>Salary & Tax Math</h5>
+                                        <p>Automated script computations for allowances, deductions, and tax brackets.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item-card">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <div>
+                                        <h5>Secure Authentication</h5>
+                                        <p>Encrypted user sessions preventing administrative route leaks.</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item-card">
+                                    <i class="fa-solid fa-file-export"></i>
+                                    <div>
+                                        <h5>Reporting Dashboard</h5>
+                                        <p>Exportable salary statements and payslips generated on request.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <!-- Contribution -->
+                        <!-- 4. Individual Contribution -->
                         <div class="detail-block">
-                            <h4><i class="fa-solid fa-user-gear"></i> Individual Contribution</h4>
-                            <ul class="contribution-list">
-                                <li>Developed the full-stack web application implementing PHP scripts for back-end workflows.</li>
-                                <li>Designed clean responsive HTML/CSS/JavaScript views for the administrative tables and salary panels.</li>
-                                <li>Automated dynamic salary processing and pro-rated tax deduction mathematical calculations in PHP.</li>
-                                <li>Implemented a secure employee self-service profile portal restricting employee access to authorized records.</li>
-                                <li>Configured and normalized MySQL schemas to log employee information, tax rates, and ledger logs.</li>
+                            <h4><i class="fa-solid fa-user-check"></i> 4. Individual Contribution</h4>
+                            <div class="contribution-list">
+                                <div class="contribution-item">
+                                    <strong>Database Design:</strong>
+                                    <p>Designed a normalized relational MySQL schema with primary/foreign keys linking salary charts, departments, and payroll runs.</p>
+                                </div>
+                                <div class="contribution-item">
+                                    <strong>Backend Development:</strong>
+                                    <p>Built server-side route handlers in PHP to query employee structures and handle admin operations securely.</p>
+                                </div>
+                                <div class="contribution-item">
+                                    <strong>Payroll Calculation Logic:</strong>
+                                    <p>Implemented mathematical logic in PHP scripts to process tax deductions, pro-rate absences, and log allowances.</p>
+                                </div>
+                                <div class="contribution-item">
+                                    <strong>User Interface Development:</strong>
+                                    <p>Constructed interactive web views using CSS styles, HTML5 semantic layout structures, and Javascript client validations.</p>
+                                </div>
+                                <div class="contribution-item">
+                                    <strong>Testing and Debugging:</strong>
+                                    <p>Wrote testing routines verifying database values against manually pre-calculated baseline ledgers to ensure accuracy.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 5. Technology Stack -->
+                        <div class="detail-block">
+                            <h4><i class="fa-solid fa-layer-group"></i> 5. Technology Stack</h4>
+                            <table class="comparison-table" style="font-size: 0.9rem;">
+                                <thead>
+                                    <tr>
+                                        <th>Layer</th>
+                                        <th>Technology</th>
+                                        <th>Role / Function</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Web Backend</strong></td>
+                                        <td>PHP (Hypertext Preprocessor)</td>
+                                        <td>Server-side router, accounting operations, and session controllers</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Database</strong></td>
+                                        <td>MySQL Database</td>
+                                        <td>Relational data tables storing employee profiles and salary runs</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Frontend</strong></td>
+                                        <td>HTML5, CSS3, JavaScript</td>
+                                        <td>Responsive layouts, HR dashboard grids, and form validation scripts</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Environment</strong></td>
+                                        <td>VS Code</td>
+                                        <td>Source writing, local testing, and git operations environment</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- 6. Challenges & Learnings -->
+                        <div class="detail-block">
+                            <h4><i class="fa-solid fa-lightbulb"></i> 6. Challenges & Learnings</h4>
+                            <div class="challenges-grid" style="grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                                <div class="challenge-card">
+                                    <span class="challenge-num">01</span>
+                                    <h5>Dynamic Calculation Consistency</h5>
+                                    <p><strong>Challenge:</strong> Mathematical pro-rating calculations could cause rounding errors over large records during database logs.</p>
+                                    <p><strong>Solution:</strong> Encapsulated calculation formulas inside dedicated math libraries using fixed-point decimals (`decimal` module) rather than float values.</p>
+                                </div>
+                                <div class="challenge-card">
+                                    <span class="challenge-num">02</span>
+                                    <h5>Relational Normalization</h5>
+                                    <p><strong>Challenge:</strong> Preventing data redundancy when employee details (like updates to basic pay) conflicted with historical payouts.</p>
+                                    <p><strong>Solution:</strong> Structured database schemas to decouple active profile state tables from frozen payout history logs.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 7. Impact & Results -->
+                        <div class="detail-block">
+                            <h4><i class="fa-solid fa-chart-line"></i> 7. Impact & Results</h4>
+                            <p>
+                                Automated HR pipelines provide measurable operational improvements:
+                            </p>
+                            <ul class="contribution-list" style="border-left: none; padding-left: 0;">
+                                <li style="position: relative; padding-left: 1.5rem;"><i class="fa-solid fa-check" style="position: absolute; left: 0; color: var(--accent-emerald);"></i> <strong>Reduced Administrative Overhead:</strong> Payroll processing is automated with a single button click.</li>
+                                <li style="position: relative; padding-left: 1.5rem;"><i class="fa-solid fa-check" style="position: absolute; left: 0; color: var(--accent-emerald);"></i> <strong>Eliminated Calculation Errors:</strong> Implemented static formula rules to ensure accurate tax computations.</li>
+                                <li style="position: relative; padding-left: 1.5rem;"><i class="fa-solid fa-check" style="position: absolute; left: 0; color: var(--accent-emerald);"></i> <strong>Improved Security:</strong> Restricted employee details to verified user account views via route middleware.</li>
                             </ul>
                         </div>
                     </div>
 
+                    <!-- Sidebar Info -->
                     <div class="project-sidebar">
-                        <!-- Tech Stack -->
                         <div class="sidebar-box">
-                            <h4>Tech Stack</h4>
+                            <h4>Technologies Used</h4>
                             <div class="tech-tags">
-                                <span class="tag">HTML</span>
-                                <span class="tag">CSS</span>
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
                                 <span class="tag">JavaScript</span>
                                 <span class="tag">PHP</span>
                                 <span class="tag">MySQL</span>
                             </div>
                         </div>
 
-                        <!-- Impact Metrics -->
-                        <div class="sidebar-box metric-box">
-                            <h4>Measurable Impact</h4>
+                        <div class="sidebar-box">
+                            <h4>Key Metrics Accomplished</h4>
                             <div class="metric-grid">
                                 <div class="metric-card">
-                                    <span class="metric-num">PHP</span>
-                                    <span class="metric-label">Automated Core Salary Calculators</span>
+                                    <span class="metric-num">Zero</span>
+                                    <span class="metric-label">Calculation Rounding Errors</span>
                                 </div>
                                 <div class="metric-card">
                                     <span class="metric-num">MySQL</span>
-                                    <span class="metric-label">Relational Data Storage & Security</span>
-                                </div>
-                                <div class="metric-card">
-                                    <span class="metric-num">Self-Service</span>
-                                    <span class="metric-label">Secure Payslip Portal Access</span>
+                                    <span class="metric-label">Decoupled Relational Schema</span>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Demo Screenshot Link -->
                         <div class="sidebar-box demo-box">
-                            <h4>Visual Mockup</h4>
-                            <div class="screenshot-container" onclick="openModal('assets/payroll_dashboard.jpg', 'Payroll Dashboard showing HR administrative interface, employee records, and salary analytics graphs.')">
-                                <img src="assets/payroll_dashboard.jpg" alt="Payroll Management System Dashboard" class="screenshot-thumbnail">
-                                <div class="screenshot-overlay">
-                                    <i class="fa-solid fa-expand"></i> View Mockup
-                                </div>
+                            <h4>8. Screenshots & Diagrams</h4>
+                            <!-- Real PNG showing Admin Login Page -->
+                            <div class="screenshot-container" style="margin-bottom: 1rem;">
+                                <img src="assets/payroll_admin_login.png" alt="Payroll System - Admin Login Screen" class="screenshot-thumbnail">
+                                <div class="screenshot-overlay"><i class="fa-solid fa-expand"></i> View Screenshot</div>
                             </div>
-                            <span class="caption">HR Payroll Processing Interface</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Architecture & Workflow Diagrams -->
-                <div class="diagram-section">
-                    <h4>System Architecture & Workflow</h4>
-                    <div class="diagram-container">
-                        <!-- SVG Architecture Diagram 3 -->
-                        <svg class="interactive-diagram" viewBox="0 0 800 240" xmlns="http://www.w3.org/2000/svg">
-                            <!-- Node 1: Web Interface -->
-                            <g class="diagram-node" transform="translate(40, 70)">
-                                <rect width="110" height="90" rx="10" fill="#1b2a47" stroke="#4ba3ff" stroke-width="2"/>
-                                <text x="55" y="35" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="12" fill="#fff">Client Browser</text>
-                                <text x="55" y="55" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#a5c8ff">HTML/CSS/JS</text>
-                                <text x="55" y="70" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#a5c8ff">Self-Service UI</text>
-                            </g>
-
-                            <!-- Double Arrow 1 -->
-                            <path d="M 150 115 L 190 115" stroke="#4ba3ff" stroke-width="3" fill="none"/>
-
-                            <!-- Node 2: PHP App Core -->
-                            <g class="diagram-node" transform="translate(200, 40)">
-                                <rect width="160" height="150" rx="10" fill="url(#tealGrad)" stroke="#39f3bb" stroke-width="2"/>
-                                <text x="80" y="30" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="700" font-size="13" fill="#fff">PHP Web Backend</text>
-                                <rect x="15" y="50" width="130" height="25" rx="5" fill="#0d1b2a" opacity="0.8"/>
-                                <text x="80" y="67" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#39f3bb">Secure Sessions</text>
-                                <rect x="15" y="85" width="130" height="25" rx="5" fill="#0d1b2a" opacity="0.8"/>
-                                <text x="80" y="102" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#39f3bb">Salary Processing</text>
-                                <rect x="15" y="120" width="130" height="25" rx="5" fill="#0d1b2a" opacity="0.8"/>
-                                <text x="80" y="137" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#39f3bb">Tax Computation</text>
-                            </g>
-
-                            <!-- Arrow 2 -->
-                            <path d="M 360 115 L 420 115" stroke="#39f3bb" stroke-width="3" fill="none"/>
-
-                            <!-- Node 3: MySQL Database -->
-                            <g class="diagram-node" transform="translate(430, 40)">
-                                <rect width="200" height="150" rx="10" fill="#1b2a47" stroke="#4ba3ff" stroke-width="2"/>
-                                <text x="100" y="25" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="700" font-size="13" fill="#fff">MySQL Database</text>
-                                
-                                <rect x="15" y="45" width="170" height="25" rx="5" fill="#0d1b2a"/>
-                                <text x="100" y="62" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#4ba3ff">employees (Base profiles)</text>
-                                
-                                <rect x="15" y="80" width="170" height="25" rx="5" fill="#0d1b2a"/>
-                                <text x="100" y="97" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#4ba3ff">salary_records (Logs & Math)</text>
-                                
-                                <rect x="15" y="115" width="170" height="25" rx="5" fill="#0d1b2a"/>
-                                <text x="100" y="132" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#4ba3ff">auth_users (Session Keys)</text>
-                            </g>
-                        </svg>
-                        <span class="caption">Payroll processing web architecture with secure PHP session handlers and MySQL tables</span>
-                    </div>
-                </div>
-
-                <!-- Challenges & Learnings -->
-                <div class="challenges-section">
-                    <h4>Challenges & Learnings</h4>
-                    <div class="challenges-grid">
-                        <div class="challenge-card">
-                            <span class="challenge-num">01</span>
-                            <h5>SQL Query Injection Prevention</h5>
-                            <p><strong>Challenge:</strong> Traditional PHP web implementations are vulnerable to SQL query injections when parsing dynamic employee IDs in tables.</p>
-                            <p><strong>Solution:</strong> Programmed parameterized queries and prepared statements via PHP Data Objects (PDO) to secure all SQL executions.</p>
-                        </div>
-                        <div class="challenge-card">
-                            <span class="challenge-num">02</span>
-                            <h5>Tax Mathematics Implementation</h5>
-                            <p><strong>Challenge:</strong> Writing consistent algorithms that dynamically handle standard deduction thresholds, pro-rated days, and bonuses.</p>
-                            <p><strong>Solution:</strong> Encapsulated all accounting formulas into a standalone, testable PHP module to prevent mathematical discrepancies.</p>
-                        </div>
-                        <div class="challenge-card">
-                            <span class="challenge-num">03</span>
-                            <h5>Cross-Site Scripting Protection</h5>
-                            <p><strong>Challenge:</strong> Malicious input variables loaded into HR administrative fields could trigger execution scripts in other user views.</p>
-                            <p><strong>Solution:</strong> Enforced sanitization controls using PHP's `htmlspecialchars` filter rules on all output strings before rendering views.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-            <!-- Project 3: YouTube Video Views Prediction using Machine Learning -->
-            <div class="project-content-wrapper active" id="project-3-content">
-                <div class="project-info-header">
-                    <span class="project-category">Machine Learning & Regression Analysis</span>
-                    <h3>YouTube Video Views Prediction using Machine Learning</h3>
-                    <p class="project-subtitle">An end-to-end Machine Learning pipeline utilizing text modeling and statistical attributes to forecast expected video view counts prior to publishing.</p>
-                </div>
-
-                <div class="project-main-grid">
-                    <div class="project-details">
-                        <!-- Problem & Solution -->
-                        <div class="detail-block">
-                            <h4><i class="fa-solid fa-circle-exclamation"></i> Problem Statement</h4>
-                            <p>Content creators lack tools to forecast how their video metadata (like titles) and initial engagement rates (like expected likes) will impact overall view performance. Predicting views beforehand helps content curators optimize titles and plan publication timings more effectively.</p>
-                        </div>
-                        
-                        <div class="detail-block">
-                            <h4><i class="fa-solid fa-circle-check"></i> Solution Overview</h4>
-                            <p>Developed an analytical machine learning regression model. The system processes textual features of video titles using TF-IDF vectorization and merges them with numerical engagement estimators (likes). A tuned XGBoost regressor then predicts overall views, achieving strong prediction accuracy.</p>
+                            <!-- Real PNG showing Employee Dashboard -->
+                            <div class="screenshot-container" style="margin-bottom: 1rem;">
+                                <img src="assets/payroll_employee_dashboard.png" alt="Payroll System - Employee Dashboard Screen" class="screenshot-thumbnail">
+                                <div class="screenshot-overlay"><i class="fa-solid fa-expand"></i> View Screenshot</div>
+                            </div>
+                            <!-- Real JPG showing HR Payroll Dashboard -->
+                            <div class="screenshot-container" style="margin-bottom: 1rem;">
+                                <img src="assets/payroll_dashboard.jpg" alt="Payroll System - HR Payroll Dashboard" class="screenshot-thumbnail">
+                                <div class="screenshot-overlay"><i class="fa-solid fa-expand"></i> View Screenshot</div>
+                            </div>
+                            <span class="caption">Mockups: Admin Login (Top), Employee Portal (Middle) & HR Dashboard (Bottom)</span>
                         </div>
 
-                        <!-- Contribution -->
-                        <div class="detail-block">
-                            <h4><i class="fa-solid fa-user-gear"></i> Individual Contribution</h4>
-                            <ul class="contribution-list">
-                                <li>Built the core Machine Learning model to predict video views using title and likes inputs.</li>
-                                <li>Performed data preprocessing, feature engineering, and robust text handling for title-based inputs.</li>
-                                <li>Applied TF-IDF text vectorization to transform title words into numerical feature weights.</li>
-                                <li>Implemented and optimized an XGBoost regression model, achieving a solid prediction performance rating (81% accuracy).</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="project-sidebar">
-                        <!-- Tech Stack -->
                         <div class="sidebar-box">
-                            <h4>Tech Stack</h4>
-                            <div class="tech-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">Scikit-learn</span>
-                                <span class="tag">XGBoost</span>
-                                <span class="tag">Pandas</span>
-                                <span class="tag">NumPy</span>
+                            <h4>9. Project Links</h4>
+                            <div style="display: flex; flex-direction: column; gap: 0.50rem;">
+                                <a href="https://github.com/aadiththiruvangadan/Payroll-Management-System" target="_blank" style="font-weight: 600;"><i class="fa-brands fa-github"></i> GitHub Repository</a>
+                                <a href="#" style="font-weight: 600; color: var(--text-muted); cursor: not-allowed;"><i class="fa-solid fa-file-lines"></i> Project Documentation</a>
                             </div>
                         </div>
 
-                        <!-- Impact Metrics -->
-                        <div class="sidebar-box metric-box">
-                            <h4>Measurable Impact</h4>
-                            <div class="metric-grid">
-                                <div class="metric-card">
-                                    <span class="metric-num">81%</span>
-                                    <span class="metric-label">Prediction Performance Accuracy</span>
-                                </div>
-                                <div class="metric-card">
-                                    <span class="metric-num">TF-IDF</span>
-                                    <span class="metric-label">Advanced Title Text NLP Handling</span>
-                                </div>
-                                <div class="metric-card">
-                                    <span class="metric-num">XGBoost</span>
-                                    <span class="metric-label">Optimized Gradient Tree Boosting</span>
-                                </div>
+                        <div class="sidebar-box">
+                            <h4>10. Live Demo / Walkthrough</h4>
+                            <div style="display: flex; flex-direction: column; gap: 0.50rem;">
+                                <a href="#" style="font-weight: 600; color: var(--text-muted); cursor: not-allowed;"><i class="fa-solid fa-circle-play"></i> Launch Live Demo</a>
+                                <a href="#" style="font-weight: 600; color: var(--text-muted); cursor: not-allowed;"><i class="fa-solid fa-video"></i> Video Walkthrough</a>
                             </div>
-                        </div>
-
-                        <!-- Demo Screenshot Link -->
-                        <div class="sidebar-box demo-box">
-                            <h4>Visual Mockup</h4>
-                            <div class="screenshot-container" onclick="openModal('assets/youtube_prediction_chart.jpg', 'YouTube View Count Predictor charts showing predictions against actual views.')">
-                                <img src="assets/youtube_prediction_chart.jpg" alt="YouTube Views Prediction Chart" class="screenshot-thumbnail">
-                                <div class="screenshot-overlay">
-                                    <i class="fa-solid fa-expand"></i> View Mockup
-                                </div>
-                            </div>
-                            <span class="caption">XGBoost View Count Prediction Analysis</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Architecture & Workflow Diagrams -->
+                <!-- 3. Technical Architecture Section -->
                 <div class="diagram-section">
-                    <h4>ML Pipeline Architecture</h4>
+                    <h4><i class="fa-solid fa-sitemap"></i> 3. Technical Architecture & System Flow</h4>
                     <div class="diagram-container">
-                        <!-- SVG Architecture Diagram 1 -->
-                        <svg class="interactive-diagram" viewBox="0 0 800 240" xmlns="http://www.w3.org/2000/svg">
-                            <!-- Definitions of Gradients -->
-                            <defs>
-                                <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#2a69ac" />
-                                    <stop offset="100%" stop-color="#14365d" />
-                                </linearGradient>
-                                <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#8a2be2" />
-                                    <stop offset="100%" stop-color="#4b0082" />
-                                </linearGradient>
-                                <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#ff4b4b" />
-                                    <stop offset="100%" stop-color="#8c1c1c" />
-                                </linearGradient>
-                                <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#02aab0" />
-                                    <stop offset="100%" stop-color="#00cdac" />
-                                </linearGradient>
-                                <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                                    <path d="M 0 0 L 10 5 L 0 10 z" fill="#39f3bb"/>
-                                </marker>
-                            </defs>
-
-                            <!-- Inputs -->
-                            <g class="diagram-node" transform="translate(30, 40)">
-                                <rect width="110" height="60" rx="8" fill="url(#redGrad)" stroke="#ff7b7b" stroke-width="2"/>
-                                <text x="55" y="35" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="11" fill="#fff">Video Title</text>
-                                <text x="55" y="48" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#ffd0d0">(Text Element)</text>
+                        <!-- Custom SVG Flowchart -->
+                        <svg class="interactive-diagram" viewBox="0 0 800 180" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Node 1: User Log-in -->
+                            <g class="diagram-node" transform="translate(20, 50)">
+                                <rect width="110" height="70" rx="8" fill="url(#gradient-blue)" stroke="#93c5fd" stroke-width="1.5"/>
+                                <text x="55" y="32" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="700" font-size="11" fill="#ffffff">User / HR Client</text>
+                                <text x="55" y="48" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#dbeafe">(Web Dashboard)</text>
                             </g>
 
-                            <g class="diagram-node" transform="translate(30, 140)">
-                                <rect width="110" height="60" rx="8" fill="url(#blueGrad)" stroke="#4ba3ff" stroke-width="2"/>
-                                <text x="55" y="35" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="11" fill="#fff">Expected Likes</text>
-                                <text x="55" y="48" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#a5c8ff">(Numerical)</text>
+                            <path d="M 130 85 L 160 85" stroke="#64748b" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+
+                            <!-- Node 2: Session Security -->
+                            <g class="diagram-node" transform="translate(170, 50)">
+                                <rect width="120" height="70" rx="8" fill="url(#gradient-blue)" stroke="#93c5fd" stroke-width="1.5"/>
+                                <text x="60" y="32" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="700" font-size="11" fill="#ffffff">Authentication</text>
+                                <text x="60" y="48" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#dbeafe">(Middleware Lock)</text>
                             </g>
 
-                            <!-- Processing block -->
-                            <path d="M 140 70 L 190 70" stroke="#4ba3ff" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
-                            
-                            <g class="diagram-node" transform="translate(200, 40)">
-                                <rect width="120" height="60" rx="8" fill="url(#purpleGrad)" stroke="#b673ff" stroke-width="2"/>
-                                <text x="60" y="30" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="11" fill="#fff">TF-IDF Vectorizer</text>
-                                <text x="60" y="45" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#dfc5ff">(Text Processing)</text>
+                            <path d="M 290 85 L 320 85" stroke="#64748b" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+
+                            <!-- Node 3: Calculations Engine -->
+                            <g class="diagram-node" transform="translate(330, 50)">
+                                <rect width="130" height="70" rx="8" fill="url(#gradient-indigo)" stroke="#c7d2fe" stroke-width="1.5"/>
+                                <text x="65" y="32" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="700" font-size="11" fill="#ffffff">Payroll Processing</text>
+                                <text x="65" y="48" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#e0e7ff">(Salary Computation)</text>
                             </g>
 
-                            <path d="M 320 70 L 360 110" stroke="#4ba3ff" stroke-width="2" fill="none"/>
-                            <path d="M 140 170 L 360 130" stroke="#4ba3ff" stroke-width="2" fill="none"/>
+                            <path d="M 460 85 L 490 85" stroke="#64748b" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
 
-                            <!-- Merge & scale -->
-                            <g class="diagram-node" transform="translate(370, 90)">
-                                <rect width="110" height="60" rx="8" fill="#1b2a47" stroke="#4ba3ff" stroke-width="2"/>
-                                <text x="55" y="30" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="11" fill="#fff">Concatenator &</text>
-                                <text x="55" y="45" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#a5c8ff">Feature Scaler</text>
+                            <!-- Node 4: MySQL Operations -->
+                            <g class="diagram-node" transform="translate(500, 50)">
+                                <rect width="120" height="70" rx="8" fill="#1e293b" stroke="#cbd5e1" stroke-width="1.5"/>
+                                <text x="60" y="32" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="700" font-size="11" fill="#ffffff">MySQL Database</text>
+                                <text x="60" y="48" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#cbd5e1">(Relational Records)</text>
                             </g>
 
-                            <path d="M 480 120 L 520 120" stroke="#4ba3ff" stroke-width="2" fill="none"/>
+                            <path d="M 620 85 L 650 85" stroke="#64748b" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
 
-                            <!-- XGBoost model -->
-                            <g class="diagram-node" transform="translate(530, 90)">
-                                <rect width="110" height="60" rx="8" fill="url(#tealGrad)" stroke="#39f3bb" stroke-width="2"/>
-                                <text x="55" y="30" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="11" fill="#fff">XGBoost Regressor</text>
-                                <text x="55" y="45" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#baffeb">(Trained Ensemble)</text>
-                            </g>
-
-                            <path d="M 640 120 L 680 120" stroke="#39f3bb" stroke-width="2" fill="none"/>
-
-                            <!-- Output -->
-                            <g class="diagram-node" transform="translate(690, 90)">
-                                <circle cx="30" cy="30" r="28" fill="#1f2937" stroke="#00cdac" stroke-width="2"/>
-                                <text x="30" y="28" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="10" fill="#fff">Predicted</text>
-                                <text x="30" y="40" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="10" fill="#00cdac">Views</text>
+                            <!-- Node 5: Payslip Generation -->
+                            <g class="diagram-node" transform="translate(660, 50)">
+                                <rect width="110" height="70" rx="8" fill="url(#gradient-emerald)" stroke="#a7f3d0" stroke-width="1.5"/>
+                                <text x="55" y="32" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="700" font-size="11" fill="#ffffff">Reports Engine</text>
+                                <text x="55" y="48" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#d1fae5">(PDF payslip log)</text>
                             </g>
                         </svg>
-                        <span class="caption">YouTube Predictor NLP & Machine Learning Regression Pipeline</span>
-                    </div>
-                </div>
-
-                <!-- Challenges & Learnings -->
-                <div class="challenges-section">
-                    <h4>Challenges & Learnings</h4>
-                    <div class="challenges-grid">
-                        <div class="challenge-card">
-                            <span class="challenge-num">01</span>
-                            <h5>Title Feature Engineering</h5>
-                            <p><strong>Challenge:</strong> Raw video titles are highly arbitrary and contain non-standard punctuation and emojis, introducing noisy dimensions.</p>
-                            <p><strong>Solution:</strong> Deployed specific regex title cleaners, parsed emoji weights, and set max features limits on TF-IDF representation to filter out outlier text weights.</p>
-                        </div>
-                        <div class="challenge-card">
-                            <span class="challenge-num">02</span>
-                            <h5>Like Count Covariance Bias</h5>
-                            <p><strong>Challenge:</strong> Model relied too heavily on like numbers to guess view counts, resulting in erratic predictions for new videos with sparse initial likes.</p>
-                            <p><strong>Solution:</strong> Introduced L1/L2 regularization criteria inside XGBoost, forcing the model to weight text elements and likes more evenly.</p>
-                        </div>
-                        <div class="challenge-card">
-                            <span class="challenge-num">03</span>
-                            <h5>Optimizing Regressor Performance</h5>
-                            <p><strong>Challenge:</strong> Achieving target correlation thresholds under default hyperparameter constraints.</p>
-                            <p><strong>Solution:</strong> Conducted grid searches over learning rates, sub-sample ratios, and depth layers, raising test accuracy scores to 81%.</p>
-                        </div>
+                        <span class="caption">Payroll automation pipeline displaying secure user access verification, transactional base computation, and SQL logs generation.</span>
                     </div>
                 </div>
             </div>
+        
+    </div>
+</section>
+
+        <!-- Project Comparison Page -->
+        <section id="comparison" class="scroll-spy">
+    <div class="portfolio-container">
+
+            <div class="section-title-wrapper">
+                <h2 class="section-title">Project Matrix</h2>
+                <p class="section-subtitle">A side-by-side technical comparison analyzing system domains, operational complexity, and technology stack attributes.</p>
+            </div>
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Comparative Area</th>
+                            <th>Search & Rescue AI System</th>
+                            <th>Payroll Management System</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Functional Domain</strong></td>
+                            <td>Artificial Intelligence & Computer Vision</td>
+                            <td>Enterprise Administrative Software</td>
+                        </tr>
+                        <tr>
+                            <td><strong>System Complexity</strong></td>
+                            <td><strong>High</strong> (Real-time multithreaded object modeling)</td>
+                            <td><strong>Medium</strong> (Data integrity and security control focus)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Primary Users</strong></td>
+                            <td>Disaster Monitoring Hubs & Field Rescue Crews</td>
+                            <td>Human Resource Staff & Corporate Personnel</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Technology Stack</strong></td>
+                            <td>Python, YOLOv3, OpenCV, Django, MySQL, Android (Java)</td>
+                            <td>HTML5, CSS3, JavaScript, PHP, MySQL</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Operational Impact</strong></td>
+                            <td>Public Safety (Coordinates dispatch speeds)</td>
+                            <td>Business Automation (Eliminates payroll errors)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+    </div>
+</section>
+
+        <!-- Why Hire Me Section -->
+        <section id="why-hire" class="scroll-spy">
+    <div class="portfolio-container">
+
+            <div class="section-title-wrapper">
+                <h2 class="section-title">Why Hire Me</h2>
+                <p class="section-subtitle">My core strengths aligned with the engineering execution, production-oriented thinking, and collaboration required by product teams.</p>
+            </div>
+            <div class="why-hire-grid">
+                
+                <div class="hire-card blue-highlight">
+                    <h3>Technical Strengths</h3>
+                    <div class="hire-list">
+                        <div class="hire-item">
+                            <i class="fa-solid fa-code-commit"></i>
+                            <div class="hire-item-content">
+                                <h4>Python Development</h4>
+                                <p>Skilled in core programming principles, OOP scripting, data processing libraries, and backend routes routing.</p>
+                            </div>
+                        </div>
+                        <div class="hire-item">
+                            <i class="fa-solid fa-code-commit"></i>
+                            <div class="hire-item-content">
+                                <h4>Full Stack Development</h4>
+                                <p>Capable of building responsive views, configuring dynamic middlewares, and orchestrating API communications.</p>
+                            </div>
+                        </div>
+                        <div class="hire-item">
+                            <i class="fa-solid fa-code-commit"></i>
+                            <div class="hire-item-content">
+                                <h4>AI Integration</h4>
+                                <p>Experienced in wrapping deep learning engines inside OpenCV pipelines and building coordinate database routes.</p>
+                            </div>
+                        </div>
+                        <div class="hire-item">
+                            <i class="fa-solid fa-code-commit"></i>
+                            <div class="hire-item-content">
+                                <h4>Database Design</h4>
+                                <p>Familiar with structuring normalized MySQL schemas, writing prepared transactions, and indexing tables.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hire-card indigo-highlight">
+                    <h3>Professional Strengths</h3>
+                    <div class="hire-list">
+                        <div class="hire-item">
+                            <i class="fa-solid fa-code-commit"></i>
+                            <div class="hire-item-content">
+                                <h4>Analytical Thinking</h4>
+                                <p>Strong mathematical logic applied directly to diagnostic bug detection and algorithm optimizations.</p>
+                            </div>
+                        </div>
+                        <div class="hire-item">
+                            <i class="fa-solid fa-code-commit"></i>
+                            <div class="hire-item-content">
+                                <h4>System Ownership</h4>
+                                <p>Proactive in writing modular clean code, verifying validations, and documenting workflows.</p>
+                            </div>
+                        </div>
+                        <div class="hire-item">
+                            <i class="fa-solid fa-code-commit"></i>
+                            <div class="hire-item-content">
+                                <h4>Continuous Learning</h4>
+                                <p>Motivated self-starter exploring technical challenges and adapting quickly to new framework guidelines.</p>
+                            </div>
+                        </div>
+                        <div class="hire-item">
+                            <i class="fa-solid fa-code-commit"></i>
+                            <div class="hire-item-content">
+                                <h4>Active Collaboration</h4>
+                                <p>Effective communicator aligned with agile feedback cycles and cooperative engineering execution.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hire-card emerald-highlight">
+                    <h3>Project Highlights</h3>
+                    <div class="hire-list">
+                        <div class="hire-item">
+                            <i class="fa-solid fa-code-commit"></i>
+                            <div class="hire-item-content">
+                                <h4>End-to-End Delivery</h4>
+                                <p>Experience moving applications from concept architectures to deployed repositories and local test setups.</p>
+                            </div>
+                        </div>
+                        <div class="hire-item">
+                            <i class="fa-solid fa-code-commit"></i>
+                            <div class="hire-item-content">
+                                <h4>Applied Computer Vision</h4>
+                                <p>Hands-on integration of localized AI object models responding dynamically to video streams.</p>
+                            </div>
+                        </div>
+                        <div class="hire-item">
+                            <i class="fa-solid fa-code-commit"></i>
+                            <div class="hire-item-content">
+                                <h4>System Design Thinking</h4>
+                                <p>Decoupled multi-threaded processes and parameterized pipelines ensuring platform reliability.</p>
+                            </div>
+                        </div>
+                        <div class="hire-item">
+                            <i class="fa-solid fa-code-commit"></i>
+                            <div class="hire-item-content">
+                                <h4>Production Best Practices</h4>
+                                <p>Focus on security sanitizations, parameterized transactions, and detailed documentation structures.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        
+    </div>
+</section>
 
         <!-- Education & Training Section -->
         <section id="training" class="growth-section scroll-spy">
-            <h2 class="section-title">Education & Training</h2>
-            
-            <h3 style="margin: 2rem 0 1.5rem 0; font-family: var(--font-heading); color: var(--accent-primary);"><i class="fa-solid fa-clock-rotate-left"></i> Academic & Professional Timeline</h3>
-            <div class="timeline">
+            <div class="portfolio-container">
+                <div class="section-title-wrapper">
+                    <h2 class="section-title">Education & Training</h2>
+                    <p class="section-subtitle">Academic roadmap and specialized developer instruction establishing my technical competencies.</p>
+                </div>
                 
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <span class="date">Jun 2019 &ndash; Mar 2021</span>
-                        <h3>Higher Secondary Education (HSC)</h3>
-                        <span class="institution">Govt HSS Kannadiparamba</span>
-                        <p>Focus on Mathematics, Physics, Chemistry, and Computer Science fundamentals.</p>
+                <!-- Timeline Card (styled like project cards) -->
+                <div class="project-content-wrapper" style="padding: 3rem; margin-bottom: 3.5rem;">
+                    <h3 style="margin-bottom: 2rem; font-family: var(--font-heading); color: var(--text-primary); display: flex; align-items: center; gap: 0.65rem;"><i class="fa-solid fa-clock-rotate-left" style="color: var(--accent-indigo);"></i> Academic & Professional Timeline</h3>
+                    <div class="academic-timeline">
+                        <div class="academic-item">
+                            <span class="date">Jun 2019 &ndash; Mar 2021</span>
+                            <h3>Higher Secondary Education (HSC)</h3>
+                            <span class="institution">Govt HSS Kannadiparamba</span>
+                            <p>Specialized focus in Physics, Chemistry, Mathematics, and Computer Science fundamentals.</p>
+                        </div>
+                        <div class="academic-item">
+                            <span class="date">Nov 2021 &ndash; Apr 2025</span>
+                            <h3>B.Tech in Computer Science Engineering</h3>
+                            <span class="institution">College Of Engineering Trikaripur</span>
+                            <p>Core curriculum in Algorithms, relational databases, Object-Oriented software architectures, and data structures.</p>
+                        </div>
+                        <div class="academic-item">
+                            <span class="date">Jul 2025 &ndash; Mar 2026</span>
+                            <h3>Python Fullstack & Data Science Specialization</h3>
+                            <span class="institution">Pyspiders / Qspiders Specialist Center</span>
+                            <p>Advanced practical training covering Python OOP, Django, API routing, database Normalization, Pandas statistics, and machine learning pipelines.</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <span class="date">Nov 2021 &ndash; Apr 2025</span>
-                        <h3>B.Tech in Computer Science Engineering</h3>
-                        <span class="institution">College Of Engineering Trikaripur</span>
-                        <p>Specialized in Core Computer Science studies, including Data Structures, Algorithms, Object-Oriented Programming (OOP), Database Systems, and Machine Learning operations.</p>
+                <!-- Certificates Group -->
+                <h3 style="margin-top: 3rem; margin-bottom: 1.5rem; font-family: var(--font-heading); color: var(--text-primary); display: flex; align-items: center; gap: 0.65rem;"><i class="fa-solid fa-award" style="color: var(--accent-indigo);"></i> Professional Certificates</h3>
+                <div class="certs-grid">
+                    <div class="cert-card">
+                        <i class="fa-solid fa-graduation-cap cert-icon"></i>
+                        <div class="cert-details">
+                            <h4>Joy of Computing Using Python</h4>
+                            <span class="issuer">NPTEL - IIT Madras</span>
+                            <p>Earned upon completion of rigorous Python core logic algorithms, data processing structures, and program writing examinations.</p>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fa-solid fa-code cert-icon"></i>
+                        <div class="cert-details">
+                            <h4>Python Fullstack & Data Science Program</h4>
+                            <span class="issuer">PySpiders / Qspiders</span>
+                            <p>Comprehensive course certification validating end-to-end web deployment, MVC routing setups, and predictive analytics.</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <span class="date">July 2025 &ndash; March 2026</span>
-                        <h3>Python Fullstack and Data Science Training</h3>
-                        <span class="institution">Pyspiders / Qspiders</span>
-                        <p>Intensive career training covering Core Python, Object-Oriented Programming (OOP), Django, REST APIs, HTML, CSS, JavaScript, Power BI, SQL, NumPy, Pandas, Statistics, and Machine Learning concepts.</p>
-                        <p style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-muted);">Built foundational knowledge in full-stack development and data analysis.</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <h3 style="margin: 3rem 0 1.5rem 0; font-family: var(--font-heading); color: var(--accent-primary);"><i class="fa-solid fa-ribbon"></i> Certificates</h3>
-            <div class="skills-grid" style="grid-template-columns: repeat(2, 1fr); margin-top: 1.5rem;">
-                <div class="skills-card">
-                    <h3><i class="fa-solid fa-certificate"></i> NPTEL Certificate</h3>
-                    <p style="font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem;">Joy of Computing Using Python</p>
-                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Issued by **IIT Madras** upon completion of Python algorithm coursework and examinations.</p>
-                </div>
-                <div class="skills-card">
-                    <h3><i class="fa-solid fa-certificate"></i> PySpiders / Qspiders</h3>
-                    <p style="font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem;">Python Full Stack and Data Science</p>
-                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Comprehensive course certification covering full-stack web applications and machine learning analytics.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- GitHub Links Section -->
-        <section id="github" class="github-section">
-            <h2 class="section-title">GitHub Project Repositories</h2>
-            <div class="github-grid">
-                
-                <a href="https://github.com/aadiththiruvangadan/youtube_views_predictions" class="github-card" target="_blank">
-                    <div class="github-card-header">
-                        <i class="fa-brands fa-github repo-icon"></i>
-                        <span class="repo-badge">Public</span>
-                    </div>
-                    <h3>youtube_views_predictions</h3>
-                    <p>Machine learning regression pipeline utilizing NLP TF-IDF text features and XGBoost to predict YouTube video view counts based on titles and likes.</p>
-                    <div class="repo-meta">
-                        <span><i class="fa-solid fa-circle lang-color python"></i> Python</span>
-                        <span><i class="fa-solid fa-star"></i> Reference Repo</span>
-                    </div>
-                </a>
-
-                <a href="https://github.com/aadiththiruvangadan/detecting-humans-in-search-and-rescue-operations-" class="github-card" target="_blank">
-                    <div class="github-card-header">
-                        <i class="fa-brands fa-github repo-icon"></i>
-                        <span class="repo-badge">Public</span>
-                    </div>
-                    <h3>detecting-humans-in-search-and-rescue-operations-</h3>
-                    <p>Real-time human detection system using YOLO and OpenCV, with a Django admin panel dashboard, MySQL log database, and Android client for push notifications.</p>
-                    <div class="repo-meta">
-                        <span><i class="fa-solid fa-circle lang-color python"></i> Python</span>
-                        <span><i class="fa-solid fa-star"></i> Reference Repo</span>
-                    </div>
-                </a>
-
-                <a href="https://github.com/aadiththiruvangadan/Payroll-Management-System" class="github-card" target="_blank">
-                    <div class="github-card-header">
-                        <i class="fa-brands fa-github repo-icon"></i>
-                        <span class="repo-badge">Public</span>
-                    </div>
-                    <h3>Payroll-Management-System</h3>
-                    <p>A web-based administration application built to automate organizational salary distribution and tax calculations while providing secure self-service modules.</p>
-                    <div class="repo-meta">
-                        <span><i class="fa-solid fa-circle lang-color php"></i> PHP</span>
-                        <span><i class="fa-solid fa-star"></i> Reference Repo</span>
-                    </div>
-                </a>
-
             </div>
         </section>
 
         <!-- Conclusion & Contact Section -->
-        <section id="contact" class="contact-section scroll-spy">
-            <h2 class="section-title">Contact & Conclusion</h2>
+        <section id="contact" class="scroll-spy">
+    <div class="portfolio-container">
+
+            <div class="section-title-wrapper">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Reach out to discuss full-time developer placements, technical opportunities, or collaborative designs.</p>
+            </div>
             <div class="contact-grid">
                 <div class="contact-text">
-                    <h3>Let's Collaborate</h3>
+                    <h3>Let's Build Something Together</h3>
                     <p>
-                        I am currently seeking full-time opportunities in **Software Development, Web Development, or AI-ML/Data Science Engineering**. I am ready to bring my dedication to code quality, logical thinking, and proactive problem-solving to a development team.
+                        I am actively seeking full-time Software Developer or AI/ML Engineer placements where I can apply my Python, Django, database, and automation skills to solve real-world problems.
                     </p>
                     <p>
-                        Feel free to contact me via email, explore my GitHub repositories, or connect on LinkedIn to discuss open developer roles, technical questions, or potential collaborations.
+                        Feel free to contact me using my email, give me a call, or explore my source files on GitHub.
                     </p>
                     <div class="print-instruction">
                         <blockquote>
                             <i class="fa-solid fa-circle-info"></i>
-                            <strong>Recruiter Tip:</strong> You can click the <strong>Export PDF</strong> button in the top navigation or use <code>Ctrl + P</code>. The print stylesheet transforms this interactive portfolio into an ATS-friendly, multi-page resume PDF!
+                            <strong>Recruiter Tip:</strong> Clicking the <strong>Export PDF</strong> button in the navigation header or printing directly using <code>Ctrl + P</code> converts this page into a clean, ATS-compliant formatted resume ready for review.
                         </blockquote>
                     </div>
                 </div>
 
                 <div class="contact-info-card">
-                    <h4>Direct Contact Info</h4>
+                    <h4>Contact Channels</h4>
                     <ul class="contact-details-list">
                         <li>
                             <i class="fa-solid fa-envelope"></i>
@@ -855,28 +1078,30 @@
                         <li>
                             <i class="fa-brands fa-linkedin"></i>
                             <div>
-                                <span>LinkedIn Connection</span>
+                                <span>LinkedIn Profile</span>
                                 <a href="https://linkedin.com/in/aadiththiruvangadan" target="_blank">linkedin.com/in/aadiththiruvangadan</a>
                             </div>
                         </li>
                         <li>
                             <i class="fa-brands fa-github"></i>
                             <div>
-                                <span>GitHub Workspace</span>
+                                <span>GitHub Repositories</span>
                                 <a href="https://github.com/aadiththiruvangadan" target="_blank">github.com/aadiththiruvangadan</a>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
-        </section>
+        
+    </div>
+</section>
 
     </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2026 Aadith Thiruvangadan. Engineered with passion and clean code principles.</p>
+            <p>&copy; 2026 Aadith Thiruvangadan. Engineered with modern aesthetics & clean architecture.</p>
         </div>
     </footer>
 
@@ -884,12 +1109,14 @@
     <div id="image-modal" class="modal" onclick="closeModal()">
         <span class="modal-close" onclick="closeModal()">&times;</span>
         <div class="modal-content-container" onclick="event.stopPropagation()">
-            <img class="modal-img" id="modal-img-element" src="" alt="">
+            <!-- SVG placeholder for modal rendering -->
+            <div id="modal-svg-container" style="background:#ffffff; border-radius:8px; padding:10px; box-shadow:0 10px 30px rgba(0,0,0,0.5);"></div>
+            <img class="modal-img" id="modal-img-element" src="" alt="" style="display:none;">
             <div id="modal-caption" class="modal-caption"></div>
         </div>
     </div>
 
     <!-- Custom Script File -->
-    <script src="app.js?v=1.2"></script>
+    <script src="app.js?v=1.3"></script>
 </body>
 </html>
