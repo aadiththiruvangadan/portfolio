@@ -1778,15 +1778,15 @@ section:last-of-type {
     }
     
     body {
-        margin: 0.8in 0.6in !important;
-        font-size: 11pt !important;
-        line-height: 1.4 !important;
+        margin: 0.5in 0.4in !important;
+        font-size: 10.5pt !important;
+        line-height: 1.35 !important;
         background: #ffffff !important;
         color: #000000 !important;
     }
     
     @page {
-        margin: 0.8in 0.6in !important;
+        margin: 0.5in 0.4in !important;
         size: A4 portrait;
     }
     
@@ -1794,56 +1794,56 @@ section:last-of-type {
     h1, h2, h3, h4, h5, h6 {
         font-weight: bold !important;
         page-break-after: avoid;
-        margin-top: 14pt !important;
-        margin-bottom: 4pt !important;
+        margin-top: 10pt !important;
+        margin-bottom: 3pt !important;
         padding: 0 !important;
     }
     
     h1 {
-        font-size: 20pt !important;
+        font-size: 18pt !important;
         text-align: center !important;
         margin-top: 0 !important;
-        margin-bottom: 6pt !important;
+        margin-bottom: 4pt !important;
     }
     
     h2 {
-        font-size: 14pt !important;
+        font-size: 13pt !important;
         border-bottom: 1px solid #000000 !important;
-        padding-bottom: 2pt !important;
-        margin-top: 18pt !important;
+        padding-bottom: 1pt !important;
+        margin-top: 14pt !important;
         text-transform: uppercase !important;
     }
     
     h3 {
-        font-size: 12pt !important;
+        font-size: 11pt !important;
     }
     
     p {
         margin-top: 0 !important;
-        margin-bottom: 8pt !important;
+        margin-bottom: 6pt !important;
         display: block !important;
         text-align: justify !important;
     }
     
     ul, ol {
         margin-top: 0 !important;
-        margin-left: 20pt !important;
-        margin-bottom: 8pt !important;
+        margin-left: 18pt !important;
+        margin-bottom: 6pt !important;
         display: block !important;
     }
     
     li {
         display: list-item !important;
         list-style-type: disc !important;
-        margin-bottom: 3pt !important;
+        margin-bottom: 2pt !important;
     }
     
     /* Tables styling (simple border, no color) */
     table {
         width: 100% !important;
         border-collapse: collapse !important;
-        margin-top: 8pt !important;
-        margin-bottom: 12pt !important;
+        margin-top: 6pt !important;
+        margin-bottom: 10pt !important;
         display: table !important;
     }
     
@@ -1854,14 +1854,14 @@ section:last-of-type {
     
     th, td {
         border: 1px solid #000000 !important;
-        padding: 6pt !important;
+        padding: 4pt !important;
         text-align: left !important;
         display: table-cell !important;
     }
     
     th {
         font-weight: bold !important;
-        background-color: #f2f2f2 !important; /* standard light gray for table header */
+        background-color: #e6e6e6 !important; /* standard light gray for table header */
     }
     
     /* Layout structural adaptations to simple linear sequence */
@@ -1871,15 +1871,15 @@ section:last-of-type {
     
     .hero-content, .hero-visual, .profile-card, .profile-info, .detail-block, .timeline-item, .timeline-content, .hire-card, .cert-card, .github-card, .contact-info-card, .project-sidebar, .sidebar-box, .project-content-wrapper {
         display: block !important;
-        margin-bottom: 8pt !important;
+        margin-bottom: 6pt !important;
         padding: 0 !important;
         border: none !important;
     }
 
     .project-info-header {
-        margin-bottom: 6pt !important;
+        margin-bottom: 4pt !important;
         border-bottom: 1px solid #000000 !important;
-        padding-bottom: 2pt !important;
+        padding-bottom: 1pt !important;
     }
     
     /* Hide decorative/interactive web-only stuff */
