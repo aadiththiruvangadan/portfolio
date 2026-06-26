@@ -514,62 +514,18 @@ section {
 /* ==========================================================================
    SECTION: FEATURED PROJECTS
    ========================================================================== */
-.project-tabs {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 2.5rem;
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: 1rem;
-}
-
-.project-tab-btn {
-    background: none;
-    border: none;
-    color: var(--text-secondary);
-    font-family: var(--font-heading);
-    font-weight: 600;
-    font-size: 1.2rem;
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: var(--transition-smooth);
-}
-
-.project-tab-num {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    font-weight: 400;
-}
-
-.project-tab-btn.active {
-    color: var(--text-primary);
-}
-
-.project-tab-btn::after {
-    content: '';
-    position: absolute;
-    bottom: -17px;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background: var(--accent-primary);
-    transition: var(--transition-smooth);
-}
-
-.project-tab-btn.active::after {
-    width: 100%;
-}
-
 .project-content-wrapper {
-    display: none;
+    display: block;
+    margin-bottom: 5rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 4rem;
     animation: fadeIn 0.5s ease;
 }
 
-.project-content-wrapper.active {
-    display: block;
+.project-content-wrapper:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .project-info-header {

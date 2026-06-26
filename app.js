@@ -58,36 +58,7 @@ function setDarkTheme() {
     }
 }
 
-// ==========================================================================
-// PROJECT TABS SWITCHER
-// ==========================================================================
-function switchProject(projectNum) {
-    const tabs = document.querySelectorAll('.project-tab-btn');
-    const contents = document.querySelectorAll('.project-content-wrapper');
 
-    tabs.forEach((tab, index) => {
-        if (index + 1 === projectNum) {
-            tab.classList.add('active');
-        } else {
-            tab.classList.remove('active');
-        }
-    });
-
-    contents.forEach((content, index) => {
-        if (index + 1 === projectNum) {
-            content.classList.add('active');
-        } else {
-            content.classList.remove('active');
-        }
-    });
-    
-    // Smooth scroll project title into view if user is already looking at projects
-    const projectsSection = document.getElementById('projects');
-    const rect = projectsSection.getBoundingClientRect();
-    if (rect.top < 100 && rect.bottom > 200) {
-        projectsSection.scrollIntoView({ behavior: 'smooth' });
-    }
-}
 
 // ==========================================================================
 // IMAGE LIGHTBOX MODAL
