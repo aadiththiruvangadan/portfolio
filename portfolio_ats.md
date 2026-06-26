@@ -22,17 +22,7 @@ Motivated Software Developer with skills in Python, SQL, and web development, pa
 
 ## Projects
 
-### Project 1: YouTube Video Views Prediction using Machine Learning
-*   **Problem Statement:** Video creators and marketing agencies struggle to estimate structural view traffic ahead of publication. Establishing prediction metrics based on text attributes and expected likes optimizes digital release schedules.
-*   **Solution Overview:** Engineered a machine learning analysis workflow combining NLP text processing and ensemble decision trees. Numerical likes and text features parsed via TF-IDF are routed into an XGBoost regression algorithm.
-*   **Tech Stack:** Python, Scikit-learn, XGBoost, Pandas, NumPy
-*   **Individual Contribution & Details:**
-    *   Built ML model to predict video views using title and likes.
-    *   Performed data preprocessing, feature engineering, and text handling for title-based inputs.
-    *   Applied TF-IDF and feature engineering to convert raw titles into numeric weights.
-    *   Implemented an XGBoost regression model achieving strong prediction performance (81% accuracy).
-
-### Project 2: Detecting Humans in Search and Rescue
+### Project 1: Detecting Humans in Search and Rescue
 *   **Problem Statement:** Search and rescue teams require automated assistance to monitor drones and surveillance video streams to spot survivors in real-time, reducing manual fatigue and increasing saving rates.
 *   **Solution Overview:** Developed a visual object tracking service deploying the YOLO model over OpenCV frames. Integrates with Django administrative dashboards and MySQL databases to log detections and route alerts to dispatch hubs.
 *   **Tech Stack:** Python, YOLO, OpenCV, Django, HTML, CSS, JavaScript
@@ -41,7 +31,7 @@ Motivated Software Developer with skills in Python, SQL, and web development, pa
     *   Optimized model performance parameters, processing queues, and threshold limits to ensure faster and accurate detection.
     *   Built the Django backend modules to save capture timestamps, GPS markers, and log events in MySQL database.
 
-### Project 3: Payroll Management System
+### Project 2: Payroll Management System
 *   **Problem Statement:** Spreadsheets and legacy ledger accounting tools are inefficient, prone to mathematical rounding errors, and vulnerable to access exploits by standard users.
 *   **Solution Overview:** Designed a secure full-stack PHP-MySQL web dashboard that automates gross/net tax calculations, provides secure login middleware, and hosts self-service panels for employees.
 *   **Tech Stack:** HTML, CSS, JavaScript, PHP, MySQL
@@ -49,6 +39,16 @@ Motivated Software Developer with skills in Python, SQL, and web development, pa
     *   Developed a web-based application utilizing PHP scripts to automate salary processing and tax calculations.
     *   Implemented secure employee self-service features restricting document access to authorized profiles.
     *   Designed normalized MySQL schemas to store user log data and historical salary tables.
+
+### Project 3: YouTube Video Views Prediction using Machine Learning
+*   **Problem Statement:** Video creators and marketing agencies struggle to estimate structural view traffic ahead of publication. Establishing prediction metrics based on text attributes and expected likes optimizes digital release schedules.
+*   **Solution Overview:** Engineered a machine learning analysis workflow combining NLP text processing and ensemble decision trees. Numerical likes and text features parsed via TF-IDF are routed into an XGBoost regression algorithm.
+*   **Tech Stack:** Python, Scikit-learn, XGBoost, Pandas, NumPy
+*   **Individual Contribution & Details:**
+    *   Built ML model to predict video views using title and likes.
+    *   Performed data preprocessing, feature engineering, and text handling for title-based inputs.
+    *   Applied TF-IDF and feature engineering to convert raw titles into numerical weights.
+    *   Implemented an XGBoost regression model achieving strong prediction performance (81% accuracy).
 
 ## Education & Training Timeline
 
