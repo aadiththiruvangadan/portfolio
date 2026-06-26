@@ -1765,24 +1765,20 @@ section:last-of-type {
    ATS-FRIENDLY & PRINT PRINT STYLES
    ========================================================================== */
 @media print {
-    /* Strip all layout grids, flexboxes, borders, backgrounds and custom fonts */
+    /* Ensure all elements print black and white with no background/shadows */
     * {
         background: #ffffff !important;
         color: #000000 !important;
+        -webkit-text-fill-color: #000000 !important; /* Fix invisible text/gradients */
         box-shadow: none !important;
         text-shadow: none !important;
-        border: none !important;
         float: none !important;
         position: static !important;
-        width: auto !important;
-        height: auto !important;
-        margin: 0 !important;
-        padding: 0 !important;
         font-family: "Times New Roman", Times, serif !important;
     }
     
     body {
-        margin: 0.8in 0.6in 0.8in 0.6in !important;
+        margin: 0.8in 0.6in !important;
         font-size: 11pt !important;
         line-height: 1.4 !important;
         background: #ffffff !important;
@@ -1790,34 +1786,48 @@ section:last-of-type {
     }
     
     @page {
-        margin: 0.8in 0.6in 0.8in 0.6in !important;
+        margin: 0.8in 0.6in !important;
         size: A4 portrait;
     }
     
+    /* Layout clean spacing */
     h1, h2, h3, h4, h5, h6 {
         font-weight: bold !important;
+        page-break-after: avoid;
         margin-top: 14pt !important;
         margin-bottom: 4pt !important;
-        page-break-after: avoid;
+        padding: 0 !important;
     }
     
-    h1 { font-size: 18pt !important; text-align: center !important; margin-bottom: 8pt !important; }
-    h2 { font-size: 14pt !important; border-bottom: 1px solid #000000 !important; padding-bottom: 2pt !important; margin-top: 18pt !important; }
-    h3 { font-size: 12pt !important; }
-    h4, h5, h6 { font-size: 11pt !important; }
+    h1 {
+        font-size: 20pt !important;
+        text-align: center !important;
+        margin-top: 0 !important;
+        margin-bottom: 6pt !important;
+    }
     
-    p, li, td, th, span, div, a {
-        font-size: 10.5pt !important;
-        line-height: 1.4 !important;
+    h2 {
+        font-size: 14pt !important;
+        border-bottom: 1px solid #000000 !important;
+        padding-bottom: 2pt !important;
+        margin-top: 18pt !important;
+        text-transform: uppercase !important;
+    }
+    
+    h3 {
+        font-size: 12pt !important;
     }
     
     p {
+        margin-top: 0 !important;
         margin-bottom: 8pt !important;
         display: block !important;
+        text-align: justify !important;
     }
     
     ul, ol {
-        margin-left: 15pt !important;
+        margin-top: 0 !important;
+        margin-left: 20pt !important;
         margin-bottom: 8pt !important;
         display: block !important;
     }
@@ -1844,13 +1854,14 @@ section:last-of-type {
     
     th, td {
         border: 1px solid #000000 !important;
-        padding: 5pt !important;
+        padding: 6pt !important;
         text-align: left !important;
         display: table-cell !important;
     }
     
     th {
         font-weight: bold !important;
+        background-color: #f2f2f2 !important; /* standard light gray for table header */
     }
     
     /* Layout structural adaptations to simple linear sequence */
@@ -1861,10 +1872,14 @@ section:last-of-type {
     .hero-content, .hero-visual, .profile-card, .profile-info, .detail-block, .timeline-item, .timeline-content, .hire-card, .cert-card, .github-card, .contact-info-card, .project-sidebar, .sidebar-box, .project-content-wrapper {
         display: block !important;
         margin-bottom: 8pt !important;
+        padding: 0 !important;
+        border: none !important;
     }
 
     .project-info-header {
         margin-bottom: 6pt !important;
+        border-bottom: 1px solid #000000 !important;
+        padding-bottom: 2pt !important;
     }
     
     /* Hide decorative/interactive web-only stuff */
