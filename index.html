@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Project Portfolio of Aadith Thiruvangadan, CSE Graduate specializing in Software Development, Web Development, and AI-ML. Highlighting systems in Machine Learning, Computer Vision, and Full-Stack Engineering.">
+    <title>Aadith Thiruvangadan | Software Developer Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    
+    <!-- Theme Toggle Floating Button -->
+    <button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle light and dark themes">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">AT<span class="dot">.</span></a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link active">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#training" class="nav-link">Education & Training</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <a href="Aadith_Thiruvangadan_Resume.pdf" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.85rem; margin-right: 0.5rem;">
+                    <i class="fa-solid fa-file-invoice"></i> PDF Resume
+                </a>
+                <button id="print-portfolio-btn" class="btn btn-primary btn-print" onclick="window.print()" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
+                    <i class="fa-solid fa-file-pdf"></i> Export PDF
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="portfolio-container">
+        
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <span class="badge">B.Tech CSE Graduate (2025)</span>
+                    <h1 class="hero-title">Aadith Thiruvangadan</h1>
+                    <h2 class="hero-subtitle">Software Developer</h2>
+                    <p class="hero-desc">
+                        Motivated Software Developer with skills in Python, SQL, and web development. Passionate about building efficient software solutions, designing systems, and continuously learning new technologies. Strong problem-solving abilities with a focus on delivering quality results.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="Aadith_Thiruvangadan_Resume.pdf" target="_blank" class="btn btn-secondary">
+                            <i class="fa-solid fa-file-invoice"></i> Access Resume PDF
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="profile-card">
+                        <div class="profile-img-container">
+                            <img src="assets/avatar.jpg" alt="Aadith Thiruvangadan Profile" class="profile-img" id="profile-img">
+                        </div>
+                        <div class="profile-info">
+                            <div class="info-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>aadiththiruvangadan@gmail.com</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>+91-9744345247</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Kannur, Kerala, India</span>
+                            </div>
+                            <div class="info-socials">
+                                <a href="https://github.com/aadiththiruvangadan" target="_blank" id="github-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://linkedin.com/in/aadiththiruvangadan" target="_blank" id="linkedin-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section scroll-spy">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-card">
+                <div class="about-text-content">
+                    <p>
+                        I am a Computer Science and Engineering graduate (Class of 2025) with a strong foundation in modern software engineering practices. My expertise spans Python development, relational database queries, full-stack web applications, and artificial intelligence implementations.
+                    </p>
+                    <p>
+                        I specialize in applying machine learning algorithms to practical problems, building clean user-centered web applications, and normalising database structures. I bring strong analytical thinking, self-reliance, and a commitment to writing clean, maintainable code to every engineering team.
+                    </p>
+                    <div class="engineering-values">
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fa-solid fa-code"></i></div>
+                            <h4>Clean Architecture</h4>
+                            <p>Striving for modular, maintainable code with clear division of concerns.</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <h4>Robust Engineering</h4>
+                            <p>Designing secure, normalized database schemas and reliable session mechanisms.</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                            <h4>Performance-Driven</h4>
+                            <p>Optimizing real-time processing threads and heavy database query operations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="skills-section scroll-spy">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                
+                <div class="skills-card">
+                    <h3><i class="fa-solid fa-terminal"></i> Programming Languages</h3>
+                    <div class="skills-list">
+                        <div class="skill-tag">Python</div>
+                        <div class="skill-tag">C</div>
+                        <div class="skill-tag">SQL</div>
+                    </div>
+                    <h3 style="margin-top: 1.5rem;"><i class="fa-solid fa-diagram-project"></i> Core Concepts</h3>
+                    <div class="skills-list">
+                        <div class="skill-tag">Object-Oriented Programming (OOP)</div>
+                        <div class="skill-tag">Data Structures</div>
+                        <div class="skill-tag">Algorithms</div>
+                    </div>
+                </div>
+
+                <div class="skills-card">
+                    <h3><i class="fa-solid fa-brain"></i> Data Science & ML</h3>
+                    <div class="skills-list">
+                        <div class="skill-tag">Scikit-learn</div>
+                        <div class="skill-tag">XGBoost</div>
+                        <div class="skill-tag">Pandas</div>
+                        <div class="skill-tag">NumPy</div>
+                        <div class="skill-tag">OpenCV</div>
+                    </div>
+                </div>
+
+                <div class="skills-card">
+                    <h3><i class="fa-solid fa-globe"></i> Web Development</h3>
+                    <div class="skills-list">
+                        <div class="skill-tag">HTML</div>
+                        <div class="skill-tag">CSS</div>
+                        <div class="skill-tag">JavaScript</div>
+                        <div class="skill-tag">PHP</div>
+                    </div>
+                    <h3 style="margin-top: 1.5rem;"><i class="fa-solid fa-database"></i> Frameworks & Databases</h3>
+                    <div class="skills-list">
+                        <div class="skill-tag">Django</div>
+                        <div class="skill-tag">MySQL</div>
+                        <div class="skill-tag">Oracle SQL</div>
+                    </div>
+                </div>
+
+                <div class="skills-card">
+                    <h3><i class="fa-solid fa-screwdriver-wrench"></i> Developer Tools</h3>
+                    <div class="skills-list">
+                        <div class="skill-tag">Git</div>
+                        <div class="skill-tag">GitHub</div>
+                        <div class="skill-tag">Power BI</div>
+                        <div class="skill-tag">Excel</div>
+                        <div class="skill-tag">VS Code</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-spy">
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="project-tabs">
+                <button class="project-tab-btn active" id="tab-btn-project1" onclick="switchProject(1)">
+                    <span class="project-tab-num">01</span> YouTube Prediction
+                </button>
+                <button class="project-tab-btn" id="tab-btn-project2" onclick="switchProject(2)">
+                    <span class="project-tab-num">02</span> YOLO Search & Rescue
+                </button>
+                <button class="project-tab-btn" id="tab-btn-project3" onclick="switchProject(3)">
+                    <span class="project-tab-num">03</span> Payroll Management
+                </button>
+            </div>
+
+            <!-- Project 1: YouTube Video Views Prediction using Machine Learning -->
+            <div class="project-content-wrapper active" id="project-1-content">
+                <div class="project-info-header">
+                    <span class="project-category">Machine Learning & Regression Analysis</span>
+                    <h3>YouTube Video Views Prediction using Machine Learning</h3>
+                    <p class="project-subtitle">An end-to-end Machine Learning pipeline utilizing text modeling and statistical attributes to forecast expected video view counts prior to publishing.</p>
+                </div>
+
+                <div class="project-main-grid">
+                    <div class="project-details">
+                        <!-- Problem & Solution -->
+                        <div class="detail-block">
+                            <h4><i class="fa-solid fa-circle-exclamation"></i> Problem Statement</h4>
+                            <p>Content creators lack tools to forecast how their video metadata (like titles) and initial engagement rates (like expected likes) will impact overall view performance. Predicting views beforehand helps content curators optimize titles and plan publication timings more effectively.</p>
+                        </div>
+                        
+                        <div class="detail-block">
+                            <h4><i class="fa-solid fa-circle-check"></i> Solution Overview</h4>
+                            <p>Developed an analytical machine learning regression model. The system processes textual features of video titles using TF-IDF vectorization and merges them with numerical engagement estimators (likes). A tuned XGBoost regressor then predicts overall views, achieving strong prediction accuracy.</p>
+                        </div>
+
+                        <!-- Contribution -->
+                        <div class="detail-block">
+                            <h4><i class="fa-solid fa-user-gear"></i> Individual Contribution</h4>
+                            <ul class="contribution-list">
+                                <li>Built the core Machine Learning model to predict video views using title and likes inputs.</li>
+                                <li>Performed data preprocessing, feature engineering, and robust text handling for title-based inputs.</li>
+                                <li>Applied TF-IDF text vectorization to transform title words into numerical feature weights.</li>
+                                <li>Implemented and optimized an XGBoost regression model, achieving a solid prediction performance rating (81% accuracy).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-sidebar">
+                        <!-- Tech Stack -->
+                        <div class="sidebar-box">
+                            <h4>Tech Stack</h4>
+                            <div class="tech-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Scikit-learn</span>
+                                <span class="tag">XGBoost</span>
+                                <span class="tag">Pandas</span>
+                                <span class="tag">NumPy</span>
+                            </div>
+                        </div>
+
+                        <!-- Impact Metrics -->
+                        <div class="sidebar-box metric-box">
+                            <h4>Measurable Impact</h4>
+                            <div class="metric-grid">
+                                <div class="metric-card">
+                                    <span class="metric-num">81%</span>
+                                    <span class="metric-label">Prediction Performance Accuracy</span>
+                                </div>
+                                <div class="metric-card">
+                                    <span class="metric-num">TF-IDF</span>
+                                    <span class="metric-label">Advanced Title Text NLP Handling</span>
+                                </div>
+                                <div class="metric-card">
+                                    <span class="metric-num">XGBoost</span>
+                                    <span class="metric-label">Optimized Gradient Tree Boosting</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Demo Screenshot Link -->
+                        <div class="sidebar-box demo-box">
+                            <h4>Visual Mockup</h4>
+                            <div class="screenshot-container" onclick="openModal('assets/youtube_prediction_chart.jpg', 'YouTube View Count Predictor charts showing predictions against actual views.')">
+                                <img src="assets/youtube_prediction_chart.jpg" alt="YouTube Views Prediction Chart" class="screenshot-thumbnail">
+                                <div class="screenshot-overlay">
+                                    <i class="fa-solid fa-expand"></i> View Mockup
+                                </div>
+                            </div>
+                            <span class="caption">XGBoost View Count Prediction Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Architecture & Workflow Diagrams -->
+                <div class="diagram-section">
+                    <h4>ML Pipeline Architecture</h4>
+                    <div class="diagram-container">
+                        <!-- SVG Architecture Diagram 1 -->
+                        <svg class="interactive-diagram" viewBox="0 0 800 240" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Definitions of Gradients -->
+                            <defs>
+                                <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#2a69ac" />
+                                    <stop offset="100%" stop-color="#14365d" />
+                                </linearGradient>
+                                <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#8a2be2" />
+                                    <stop offset="100%" stop-color="#4b0082" />
+                                </linearGradient>
+                                <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#ff4b4b" />
+                                    <stop offset="100%" stop-color="#8c1c1c" />
+                                </linearGradient>
+                                <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#02aab0" />
+                                    <stop offset="100%" stop-color="#00cdac" />
+                                </linearGradient>
+                                <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                    <path d="M 0 0 L 10 5 L 0 10 z" fill="#39f3bb"/>
+                                </marker>
+                            </defs>
+
+                            <!-- Inputs -->
+                            <g class="diagram-node" transform="translate(30, 40)">
+                                <rect width="110" height="60" rx="8" fill="url(#redGrad)" stroke="#ff7b7b" stroke-width="2"/>
+                                <text x="55" y="35" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="11" fill="#fff">Video Title</text>
+                                <text x="55" y="48" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#ffd0d0">(Text Element)</text>
+                            </g>
+
+                            <g class="diagram-node" transform="translate(30, 140)">
+                                <rect width="110" height="60" rx="8" fill="url(#blueGrad)" stroke="#4ba3ff" stroke-width="2"/>
+                                <text x="55" y="35" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="11" fill="#fff">Expected Likes</text>
+                                <text x="55" y="48" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#a5c8ff">(Numerical)</text>
+                            </g>
+
+                            <!-- Processing block -->
+                            <path d="M 140 70 L 190 70" stroke="#4ba3ff" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+                            
+                            <g class="diagram-node" transform="translate(200, 40)">
+                                <rect width="120" height="60" rx="8" fill="url(#purpleGrad)" stroke="#b673ff" stroke-width="2"/>
+                                <text x="60" y="30" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="11" fill="#fff">TF-IDF Vectorizer</text>
+                                <text x="60" y="45" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#dfc5ff">(Text Processing)</text>
+                            </g>
+
+                            <path d="M 320 70 L 360 110" stroke="#4ba3ff" stroke-width="2" fill="none"/>
+                            <path d="M 140 170 L 360 130" stroke="#4ba3ff" stroke-width="2" fill="none"/>
+
+                            <!-- Merge & scale -->
+                            <g class="diagram-node" transform="translate(370, 90)">
+                                <rect width="110" height="60" rx="8" fill="#1b2a47" stroke="#4ba3ff" stroke-width="2"/>
+                                <text x="55" y="30" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="11" fill="#fff">Concatenator &</text>
+                                <text x="55" y="45" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#a5c8ff">Feature Scaler</text>
+                            </g>
+
+                            <path d="M 480 120 L 520 120" stroke="#4ba3ff" stroke-width="2" fill="none"/>
+
+                            <!-- XGBoost model -->
+                            <g class="diagram-node" transform="translate(530, 90)">
+                                <rect width="110" height="60" rx="8" fill="url(#tealGrad)" stroke="#39f3bb" stroke-width="2"/>
+                                <text x="55" y="30" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="11" fill="#fff">XGBoost Regressor</text>
+                                <text x="55" y="45" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#baffeb">(Trained Ensemble)</text>
+                            </g>
+
+                            <path d="M 640 120 L 680 120" stroke="#39f3bb" stroke-width="2" fill="none"/>
+
+                            <!-- Output -->
+                            <g class="diagram-node" transform="translate(690, 90)">
+                                <circle cx="30" cy="30" r="28" fill="#1f2937" stroke="#00cdac" stroke-width="2"/>
+                                <text x="30" y="28" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="10" fill="#fff">Predicted</text>
+                                <text x="30" y="40" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="10" fill="#00cdac">Views</text>
+                            </g>
+                        </svg>
+                        <span class="caption">YouTube Predictor NLP & Machine Learning Regression Pipeline</span>
+                    </div>
+                </div>
+
+                <!-- Challenges & Learnings -->
+                <div class="challenges-section">
+                    <h4>Challenges & Learnings</h4>
+                    <div class="challenges-grid">
+                        <div class="challenge-card">
+                            <span class="challenge-num">01</span>
+                            <h5>Title Feature Engineering</h5>
+                            <p><strong>Challenge:</strong> Raw video titles are highly arbitrary and contain non-standard punctuation and emojis, introducing noisy dimensions.</p>
+                            <p><strong>Solution:</strong> Deployed specific regex title cleaners, parsed emoji weights, and set max features limits on TF-IDF representation to filter out outlier text weights.</p>
+                        </div>
+                        <div class="challenge-card">
+                            <span class="challenge-num">02</span>
+                            <h5>Like Count Covariance Bias</h5>
+                            <p><strong>Challenge:</strong> Model relied too heavily on like numbers to guess view counts, resulting in erratic predictions for new videos with sparse initial likes.</p>
+                            <p><strong>Solution:</strong> Introduced L1/L2 regularization criteria inside XGBoost, forcing the model to weight text elements and likes more evenly.</p>
+                        </div>
+                        <div class="challenge-card">
+                            <span class="challenge-num">03</span>
+                            <h5>Optimizing Regressor Performance</h5>
+                            <p><strong>Challenge:</strong> Achieving target correlation thresholds under default hyperparameter constraints.</p>
+                            <p><strong>Solution:</strong> Conducted grid searches over learning rates, sub-sample ratios, and depth layers, raising test accuracy scores to 81%.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Detecting Humans in Search and Rescue -->
+            <div class="project-content-wrapper" id="project-2-content">
+                <div class="project-info-header">
+                    <span class="project-category">Computer Vision & Object Detection</span>
+                    <h3>Detecting Humans in Search and Rescue</h3>
+                    <p class="project-subtitle">Real-time object classification framework engineered to detect human survivors in disaster environments and route notifications to field rescue units.</p>
+                </div>
+
+                <div class="project-main-grid">
+                    <div class="project-details">
+                        <!-- Problem & Solution -->
+                        <div class="detail-block">
+                            <h4><i class="fa-solid fa-circle-exclamation"></i> Problem Statement</h4>
+                            <p>Searching for survivors after natural disasters manually over vast camera feeds delays localized help, risking lives during the vital early rescue hours.</p>
+                        </div>
+                        
+                        <div class="detail-block">
+                            <h4><i class="fa-solid fa-circle-check"></i> Solution Overview</h4>
+                            <p>Designed a unified solution that runs YOLO inference on video capture frames. If a human object is classified, coordinate details and image logs are updated in a MySQL db and routed through Django web gateways as mobile alerts.</p>
+                        </div>
+
+                        <!-- Contribution -->
+                        <div class="detail-block">
+                            <h4><i class="fa-solid fa-user-gear"></i> Individual Contribution</h4>
+                            <ul class="contribution-list">
+                                <li>Implemented real-time human detection using YOLO and OpenCV on live video streams for search-and-rescue applications.</li>
+                                <li>Optimized model performance parameters, threshold filters, and frame scaling to ensure faster and accurate detection rates.</li>
+                                <li>Configured Django backend services to log detection instances and host the administrative map console.</li>
+                                <li>Participated in mobile integration tests ensuring spatial markers sync accurately.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-sidebar">
+                        <!-- Tech Stack -->
+                        <div class="sidebar-box">
+                            <h4>Tech Stack</h4>
+                            <div class="tech-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">YOLO</span>
+                                <span class="tag">OpenCV</span>
+                                <span class="tag">Django</span>
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+
+                        <!-- Impact Metrics -->
+                        <div class="sidebar-box metric-box">
+                            <h4>Measurable Impact</h4>
+                            <div class="metric-grid">
+                                <div class="metric-card">
+                                    <span class="metric-num">YOLO</span>
+                                    <span class="metric-label">High-Speed Object Detection</span>
+                                </div>
+                                <div class="metric-card">
+                                    <span class="metric-num">OpenCV</span>
+                                    <span class="metric-label">Efficient Frame Processing</span>
+                                </div>
+                                <div class="metric-card">
+                                    <span class="metric-num">Real-Time</span>
+                                    <span class="metric-label">Instant Rescue Dispatch Logs</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Demo Screenshot Link -->
+                        <div class="sidebar-box demo-box">
+                            <h4>Visual Mockup</h4>
+                            <div class="screenshot-container" onclick="openModal('assets/search_rescue_demo.jpg', 'Search and Rescue Computer Vision Interface showing YOLO bounding boxes on thermal survivor feed.')">
+                                <img src="assets/search_rescue_demo.jpg" alt="Search and Rescue Demo Capture" class="screenshot-thumbnail">
+                                <div class="screenshot-overlay">
+                                    <i class="fa-solid fa-expand"></i> View Mockup
+                                </div>
+                            </div>
+                            <span class="caption">YOLO survivor feed tracking mockup</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Architecture & Workflow Diagrams -->
+                <div class="diagram-section">
+                    <h4>Technical Architecture & Flow</h4>
+                    <div class="diagram-container">
+                        <!-- SVG Architecture Diagram 2 -->
+                        <svg class="interactive-diagram" viewBox="0 0 800 240" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Node 1: Video Capture -->
+                            <g class="diagram-node" transform="translate(40, 70)">
+                                <rect width="110" height="90" rx="10" fill="url(#blueGrad)" stroke="#4ba3ff" stroke-width="2"/>
+                                <text x="55" y="40" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="12" fill="#fff">Video Stream</text>
+                                <text x="55" y="60" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#a5c8ff">(OpenCV Capture)</text>
+                                <circle cx="55" cy="18" r="8" fill="#ff4d4d"/>
+                            </g>
+
+                            <!-- Arrow 1 -->
+                            <path d="M 150 115 L 180 115" stroke="#4ba3ff" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+
+                            <!-- Node 2: YOLO Model -->
+                            <g class="diagram-node" transform="translate(190, 70)">
+                                <rect width="110" height="90" rx="10" fill="url(#purpleGrad)" stroke="#b673ff" stroke-width="2"/>
+                                <text x="55" y="40" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="12" fill="#fff">YOLO Model</text>
+                                <text x="55" y="60" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#dfc5ff">(Object Classification)</text>
+                            </g>
+
+                            <!-- Arrow 2 -->
+                            <path d="M 300 115 L 330 115" stroke="#b673ff" stroke-width="3" fill="none"/>
+
+                            <!-- Node 3: Django Backend -->
+                            <g class="diagram-node" transform="translate(340, 70)">
+                                <rect width="120" height="90" rx="10" fill="url(#tealGrad)" stroke="#39f3bb" stroke-width="2"/>
+                                <text x="60" y="40" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="12" fill="#fff">Django Server</text>
+                                <text x="60" y="60" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#baffeb">(Alerts Router)</text>
+                            </g>
+
+                            <!-- Arrow 3 (Split path to DB and Mobile App) -->
+                            <path d="M 460 100 L 510 60" stroke="#39f3bb" stroke-width="3" fill="none"/>
+                            <path d="M 460 130 L 510 170" stroke="#39f3bb" stroke-width="3" fill="none"/>
+
+                            <!-- Node 4: MySQL Database -->
+                            <g class="diagram-node" transform="translate(520, 20)">
+                                <rect width="110" height="70" rx="10" fill="#1b2a47" stroke="#4ba3ff" stroke-width="2"/>
+                                <text x="55" y="35" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="12" fill="#fff">MySQL DB</text>
+                                <text x="55" y="52" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#a5c8ff">(Logs & Metadata)</text>
+                            </g>
+
+                            <!-- Node 5: Android Application -->
+                            <g class="diagram-node" transform="translate(520, 140)">
+                                <rect width="110" height="80" rx="10" fill="#1b2a47" stroke="#39f3bb" stroke-width="2"/>
+                                <text x="55" y="35" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="12" fill="#fff">Android App</text>
+                                <text x="55" y="52" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#baffeb">(Rescue Team)</text>
+                                <text x="55" y="65" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#00cdac">Google Maps API</text>
+                            </g>
+
+                            <!-- Arrow 4 (Mobile app and DB Sync / Map tracking details) -->
+                            <path d="M 630 180 L 680 180" stroke="#39f3bb" stroke-width="2" stroke-dasharray="4" fill="none"/>
+                            
+                            <!-- Node 6: Location Tracking -->
+                            <g class="diagram-node" transform="translate(690, 145)">
+                                <circle cx="35" cy="35" r="30" fill="#0d1b2a" stroke="#ff4d4d" stroke-width="2"/>
+                                <text x="35" y="38" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#ff4d4d" font-weight="600">GeoGPS</text>
+                            </g>
+                        </svg>
+                        <span class="caption">Real-time Data Flow Pipeline: Capture &rarr; Detection Inference &rarr; Alert Dispatch</span>
+                    </div>
+                </div>
+
+                <!-- Challenges & Learnings -->
+                <div class="challenges-section">
+                    <h4>Challenges & Learnings</h4>
+                    <div class="challenges-grid">
+                        <div class="challenge-card">
+                            <span class="challenge-num">01</span>
+                            <h5>Improving Detection Accuracy</h5>
+                            <p><strong>Challenge:</strong> Initial testing experienced false positives on objects under low-contrast conditions (dust, shadows).</p>
+                            <p><strong>Solution:</strong> Tuned YOLO confidence thresholds and optimized input frame contrast via OpenCV histogram equalization before submitting frames to inference.</p>
+                        </div>
+                        <div class="challenge-card">
+                            <span class="challenge-num">02</span>
+                            <h5>Handling Real-Time Video Latency</h5>
+                            <p><strong>Challenge:</strong> Processing sequential frames locked the main execution thread, causing severe UI delay and lag.</p>
+                            <p><strong>Solution:</strong> Deployed a producer-consumer thread architecture. The capture stream runs on a separate worker thread feeding a queue, decoupling visual processing from ingestion.</p>
+                        </div>
+                        <div class="challenge-card">
+                            <span class="challenge-num">03</span>
+                            <h5>Web & Mobile Module Integration</h5>
+                            <p><strong>Challenge:</strong> Ensuring secure, real-time alert routing between Django and the Android client without battery depletion.</p>
+                            <p><strong>Solution:</strong> Established a lightweight JSON-over-HTTP polling sync mechanism with dynamic polling intervals based on location change frequency.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Payroll Management System -->
+            <div class="project-content-wrapper" id="project-3-content">
+                <div class="project-info-header">
+                    <span class="project-category">Full-Stack Web Application</span>
+                    <h3>Payroll Management System</h3>
+                    <p class="project-subtitle">A web-based administration application built to automate organizational salary distribution and tax calculations while providing secure self-service modules.</p>
+                </div>
+
+                <div class="project-main-grid">
+                    <div class="project-details">
+                        <!-- Problem & Solution -->
+                        <div class="detail-block">
+                            <h4><i class="fa-solid fa-circle-exclamation"></i> Problem Statement</h4>
+                            <p>Organizations waste significant administrative hours calculating salaries, pro-rating tax deductions, and issuing payslips manually, while exposing sensitive financial records to structural leaks.</p>
+                        </div>
+                        
+                        <div class="detail-block">
+                            <h4><i class="fa-solid fa-circle-check"></i> Solution Overview</h4>
+                            <p>Developed a full-stack PHP-MySQL platform. The backend computes gross/net values based on local tax rules, HR controls log details, and a secure employee self-service portal lets employees view invoices.</p>
+                        </div>
+
+                        <!-- Contribution -->
+                        <div class="detail-block">
+                            <h4><i class="fa-solid fa-user-gear"></i> Individual Contribution</h4>
+                            <ul class="contribution-list">
+                                <li>Developed the full-stack web application implementing PHP scripts for back-end workflows.</li>
+                                <li>Designed clean responsive HTML/CSS/JavaScript views for the administrative tables and salary panels.</li>
+                                <li>Automated dynamic salary processing and pro-rated tax deduction mathematical calculations in PHP.</li>
+                                <li>Implemented a secure employee self-service profile portal restricting employee access to authorized records.</li>
+                                <li>Configured and normalized MySQL schemas to log employee information, tax rates, and ledger logs.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-sidebar">
+                        <!-- Tech Stack -->
+                        <div class="sidebar-box">
+                            <h4>Tech Stack</h4>
+                            <div class="tech-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                        </div>
+
+                        <!-- Impact Metrics -->
+                        <div class="sidebar-box metric-box">
+                            <h4>Measurable Impact</h4>
+                            <div class="metric-grid">
+                                <div class="metric-card">
+                                    <span class="metric-num">PHP</span>
+                                    <span class="metric-label">Automated Core Salary Calculators</span>
+                                </div>
+                                <div class="metric-card">
+                                    <span class="metric-num">MySQL</span>
+                                    <span class="metric-label">Relational Data Storage & Security</span>
+                                </div>
+                                <div class="metric-card">
+                                    <span class="metric-num">Self-Service</span>
+                                    <span class="metric-label">Secure Payslip Portal Access</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Demo Screenshot Link -->
+                        <div class="sidebar-box demo-box">
+                            <h4>Visual Mockup</h4>
+                            <div class="screenshot-container" onclick="openModal('assets/payroll_dashboard.jpg', 'Payroll Dashboard showing HR administrative interface, employee records, and salary analytics graphs.')">
+                                <img src="assets/payroll_dashboard.jpg" alt="Payroll Management System Dashboard" class="screenshot-thumbnail">
+                                <div class="screenshot-overlay">
+                                    <i class="fa-solid fa-expand"></i> View Mockup
+                                </div>
+                            </div>
+                            <span class="caption">HR Payroll Processing Interface</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Architecture & Workflow Diagrams -->
+                <div class="diagram-section">
+                    <h4>System Architecture & Workflow</h4>
+                    <div class="diagram-container">
+                        <!-- SVG Architecture Diagram 3 -->
+                        <svg class="interactive-diagram" viewBox="0 0 800 240" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Node 1: Web Interface -->
+                            <g class="diagram-node" transform="translate(40, 70)">
+                                <rect width="110" height="90" rx="10" fill="#1b2a47" stroke="#4ba3ff" stroke-width="2"/>
+                                <text x="55" y="35" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="12" fill="#fff">Client Browser</text>
+                                <text x="55" y="55" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#a5c8ff">HTML/CSS/JS</text>
+                                <text x="55" y="70" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#a5c8ff">Self-Service UI</text>
+                            </g>
+
+                            <!-- Double Arrow 1 -->
+                            <path d="M 150 115 L 190 115" stroke="#4ba3ff" stroke-width="3" fill="none"/>
+
+                            <!-- Node 2: PHP App Core -->
+                            <g class="diagram-node" transform="translate(200, 40)">
+                                <rect width="160" height="150" rx="10" fill="url(#tealGrad)" stroke="#39f3bb" stroke-width="2"/>
+                                <text x="80" y="30" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="700" font-size="13" fill="#fff">PHP Web Backend</text>
+                                <rect x="15" y="50" width="130" height="25" rx="5" fill="#0d1b2a" opacity="0.8"/>
+                                <text x="80" y="67" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#39f3bb">Secure Sessions</text>
+                                <rect x="15" y="85" width="130" height="25" rx="5" fill="#0d1b2a" opacity="0.8"/>
+                                <text x="80" y="102" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#39f3bb">Salary Processing</text>
+                                <rect x="15" y="120" width="130" height="25" rx="5" fill="#0d1b2a" opacity="0.8"/>
+                                <text x="80" y="137" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#39f3bb">Tax Computation</text>
+                            </g>
+
+                            <!-- Arrow 2 -->
+                            <path d="M 360 115 L 420 115" stroke="#39f3bb" stroke-width="3" fill="none"/>
+
+                            <!-- Node 3: MySQL Database -->
+                            <g class="diagram-node" transform="translate(430, 40)">
+                                <rect width="200" height="150" rx="10" fill="#1b2a47" stroke="#4ba3ff" stroke-width="2"/>
+                                <text x="100" y="25" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="700" font-size="13" fill="#fff">MySQL Database</text>
+                                
+                                <rect x="15" y="45" width="170" height="25" rx="5" fill="#0d1b2a"/>
+                                <text x="100" y="62" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#4ba3ff">employees (Base profiles)</text>
+                                
+                                <rect x="15" y="80" width="170" height="25" rx="5" fill="#0d1b2a"/>
+                                <text x="100" y="97" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#4ba3ff">salary_records (Logs & Math)</text>
+                                
+                                <rect x="15" y="115" width="170" height="25" rx="5" fill="#0d1b2a"/>
+                                <text x="100" y="132" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" fill="#4ba3ff">auth_users (Session Keys)</text>
+                            </g>
+                        </svg>
+                        <span class="caption">Payroll processing web architecture with secure PHP session handlers and MySQL tables</span>
+                    </div>
+                </div>
+
+                <!-- Challenges & Learnings -->
+                <div class="challenges-section">
+                    <h4>Challenges & Learnings</h4>
+                    <div class="challenges-grid">
+                        <div class="challenge-card">
+                            <span class="challenge-num">01</span>
+                            <h5>SQL Query Injection Prevention</h5>
+                            <p><strong>Challenge:</strong> Traditional PHP web implementations are vulnerable to SQL query injections when parsing dynamic employee IDs in tables.</p>
+                            <p><strong>Solution:</strong> Programmed parameterized queries and prepared statements via PHP Data Objects (PDO) to secure all SQL executions.</p>
+                        </div>
+                        <div class="challenge-card">
+                            <span class="challenge-num">02</span>
+                            <h5>Tax Mathematics Implementation</h5>
+                            <p><strong>Challenge:</strong> Writing consistent algorithms that dynamically handle standard deduction thresholds, pro-rated days, and bonuses.</p>
+                            <p><strong>Solution:</strong> Encapsulated all accounting formulas into a standalone, testable PHP module to prevent mathematical discrepancies.</p>
+                        </div>
+                        <div class="challenge-card">
+                            <span class="challenge-num">03</span>
+                            <h5>Cross-Site Scripting Protection</h5>
+                            <p><strong>Challenge:</strong> Malicious input variables loaded into HR administrative fields could trigger execution scripts in other user views.</p>
+                            <p><strong>Solution:</strong> Enforced sanitization controls using PHP's `htmlspecialchars` filter rules on all output strings before rendering views.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Training Section -->
+        <section id="training" class="growth-section scroll-spy">
+            <h2 class="section-title">Education & Training</h2>
+            
+            <h3 style="margin: 2rem 0 1.5rem 0; font-family: var(--font-heading); color: var(--accent-primary);"><i class="fa-solid fa-clock-rotate-left"></i> Academic & Professional Timeline</h3>
+            <div class="timeline">
+                
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="date">Jun 2019 &ndash; Mar 2021</span>
+                        <h3>Higher Secondary Education (HSC)</h3>
+                        <span class="institution">Govt HSS Kannadiparamba</span>
+                        <p>Focus on Mathematics, Physics, Chemistry, and Computer Science fundamentals.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="date">Nov 2021 &ndash; Apr 2025</span>
+                        <h3>B.Tech in Computer Science Engineering</h3>
+                        <span class="institution">College Of Engineering Trikaripur</span>
+                        <p>Specialized in Core Computer Science studies, including Data Structures, Algorithms, Object-Oriented Programming (OOP), Database Systems, and Machine Learning operations.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="date">July 2025 &ndash; March 2026</span>
+                        <h3>Python Fullstack and Data Science Training</h3>
+                        <span class="institution">Pyspiders / Qspiders</span>
+                        <p>Intensive career training covering Core Python, Object-Oriented Programming (OOP), Django, REST APIs, HTML, CSS, JavaScript, Power BI, SQL, NumPy, Pandas, Statistics, and Machine Learning concepts.</p>
+                        <p style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-muted);">Built foundational knowledge in full-stack development and data analysis.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <h3 style="margin: 3rem 0 1.5rem 0; font-family: var(--font-heading); color: var(--accent-primary);"><i class="fa-solid fa-ribbon"></i> Certificates</h3>
+            <div class="skills-grid" style="grid-template-columns: repeat(2, 1fr); margin-top: 1.5rem;">
+                <div class="skills-card">
+                    <h3><i class="fa-solid fa-certificate"></i> NPTEL Certificate</h3>
+                    <p style="font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem;">Joy of Computing Using Python</p>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Issued by **IIT Madras** upon completion of Python algorithm coursework and examinations.</p>
+                </div>
+                <div class="skills-card">
+                    <h3><i class="fa-solid fa-certificate"></i> PySpiders / Qspiders</h3>
+                    <p style="font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem;">Python Full Stack and Data Science</p>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Comprehensive course certification covering full-stack web applications and machine learning analytics.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Links Section -->
+        <section id="github" class="github-section">
+            <h2 class="section-title">GitHub Project Repositories</h2>
+            <div class="github-grid">
+                
+                <a href="https://github.com/aadiththiruvangadan/youtube_views_predictions" class="github-card" target="_blank">
+                    <div class="github-card-header">
+                        <i class="fa-brands fa-github repo-icon"></i>
+                        <span class="repo-badge">Public</span>
+                    </div>
+                    <h3>youtube_views_predictions</h3>
+                    <p>Machine learning regression pipeline utilizing NLP TF-IDF text features and XGBoost to predict YouTube video view counts based on titles and likes.</p>
+                    <div class="repo-meta">
+                        <span><i class="fa-solid fa-circle lang-color python"></i> Python</span>
+                        <span><i class="fa-solid fa-star"></i> Reference Repo</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/aadiththiruvangadan/detecting-humans-in-search-and-rescue-operations-" class="github-card" target="_blank">
+                    <div class="github-card-header">
+                        <i class="fa-brands fa-github repo-icon"></i>
+                        <span class="repo-badge">Public</span>
+                    </div>
+                    <h3>detecting-humans-in-search-and-rescue-operations-</h3>
+                    <p>Real-time human detection system using YOLO and OpenCV, with a Django admin panel dashboard, MySQL log database, and Android client for push notifications.</p>
+                    <div class="repo-meta">
+                        <span><i class="fa-solid fa-circle lang-color python"></i> Python</span>
+                        <span><i class="fa-solid fa-star"></i> Reference Repo</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/aadiththiruvangadan/Payroll-Management-System" class="github-card" target="_blank">
+                    <div class="github-card-header">
+                        <i class="fa-brands fa-github repo-icon"></i>
+                        <span class="repo-badge">Public</span>
+                    </div>
+                    <h3>Payroll-Management-System</h3>
+                    <p>A web-based administration application built to automate organizational salary distribution and tax calculations while providing secure self-service modules.</p>
+                    <div class="repo-meta">
+                        <span><i class="fa-solid fa-circle lang-color php"></i> PHP</span>
+                        <span><i class="fa-solid fa-star"></i> Reference Repo</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Conclusion & Contact Section -->
+        <section id="contact" class="contact-section scroll-spy">
+            <h2 class="section-title">Contact & Conclusion</h2>
+            <div class="contact-grid">
+                <div class="contact-text">
+                    <h3>Let's Collaborate</h3>
+                    <p>
+                        I am currently seeking full-time opportunities in **Software Development, Web Development, or AI-ML/Data Science Engineering**. I am ready to bring my dedication to code quality, logical thinking, and proactive problem-solving to a development team.
+                    </p>
+                    <p>
+                        Feel free to contact me via email, explore my GitHub repositories, or connect on LinkedIn to discuss open developer roles, technical questions, or potential collaborations.
+                    </p>
+                    <div class="print-instruction">
+                        <blockquote>
+                            <i class="fa-solid fa-circle-info"></i>
+                            <strong>Recruiter Tip:</strong> You can click the <strong>Export PDF</strong> button in the top navigation or use <code>Ctrl + P</code>. The print stylesheet transforms this interactive portfolio into an ATS-friendly, multi-page resume PDF!
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="contact-info-card">
+                    <h4>Direct Contact Info</h4>
+                    <ul class="contact-details-list">
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <span>Email Address</span>
+                                <a href="mailto:aadiththiruvangadan@gmail.com">aadiththiruvangadan@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <span>Phone Number</span>
+                                <a href="tel:+919744345247">+91-9744345247</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <span>Location</span>
+                                <strong>Kannur, Kerala, India</strong>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <div>
+                                <span>LinkedIn Connection</span>
+                                <a href="https://linkedin.com/in/aadiththiruvangadan" target="_blank">linkedin.com/in/aadiththiruvangadan</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-github"></i>
+                            <div>
+                                <span>GitHub Workspace</span>
+                                <a href="https://github.com/aadiththiruvangadan" target="_blank">github.com/aadiththiruvangadan</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Aadith Thiruvangadan. Engineered with passion and clean code principles.</p>
+        </div>
+    </footer>
+
+    <!-- Image Modal Viewer -->
+    <div id="image-modal" class="modal" onclick="closeModal()">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <div class="modal-content-container" onclick="event.stopPropagation()">
+            <img class="modal-img" id="modal-img-element" src="" alt="">
+            <div id="modal-caption" class="modal-caption"></div>
+        </div>
+    </div>
+
+    <!-- Custom Script File -->
+    <script src="app.js"></script>
+</body>
+</html>
