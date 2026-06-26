@@ -1777,6 +1777,18 @@ section:last-of-type {
         color: #000000 !important;
         font-size: 10pt !important;
         line-height: 1.3 !important;
+        filter: grayscale(100%) !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+    
+    /* Strict Black & White color overrides for print */
+    a, a:visited, a:hover, a:active, p, span, li, h1, h2, h3, h4, h5, h6, td, th {
+        color: #000000 !important;
+    }
+    
+    * {
+        border-color: #cccccc !important;
     }
     
     .portfolio-container {
