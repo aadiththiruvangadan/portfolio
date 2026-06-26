@@ -1336,9 +1336,13 @@ section {
         max-width: 100% !important;
     }
 
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid !important;
+    }
+
     section {
         padding: 1.5rem 0 !important;
-        page-break-inside: avoid;
+        page-break-inside: auto !important;
     }
 
     .section-title {
@@ -1478,7 +1482,8 @@ section {
     /* UNROLL PROJECTS IN PRINT: Show both sequentially instead of active tab */
     .project-content-wrapper {
         display: block !important;
-        page-break-before: always;
+        page-break-before: auto !important;
+        page-break-inside: auto !important;
         padding-top: 1rem !important;
     }
 
