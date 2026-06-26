@@ -1,0 +1,261 @@
+%--------------------------------------------------------------------------
+% Aadith Thiruvangadan - Detailed Project Portfolio (LaTeX Source)
+% Suitable for compilation on Overleaf (pdflatex)
+% Produces a multi-page professional project portfolio report.
+%--------------------------------------------------------------------------
+
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{bookmark}
+\usepackage{tcolorbox}
+\usepackage{tabularx}
+
+% Adjust Geometry
+\geometry{left=0.8in, right=0.8in, top=0.9in, bottom=0.9in}
+
+% Color Definitions
+\definecolor{SlateBlue}{RGB}{27, 42, 71}
+\definecolor{TealAccent}{RGB}{0, 150, 136}
+\definecolor{CoolGrey}{RGB}{241, 245, 249}
+\definecolor{DeepSlate}{RGB}{15, 23, 42}
+\definecolor{BorderGrey}{RGB}{226, 232, 240}
+
+% Header and Footer Setup
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{gray} Aadith Thiruvangadan -- Project Portfolio}
+\fancyhead[R]{\small\color{gray} \thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{BorderGrey}\leaders\hrule height \headrulewidth\hfill}}
+
+% Section Formatting
+\titleformat{\section}{
+  \vspace{10pt}\large\bfseries\color{SlateBlue}
+}{}{0em}{}[\color{BorderGrey}\titrule \vspace{5pt}]
+
+\titleformat{\subsection}{
+  \vspace{6pt}\bfseries\color{DeepSlate}
+}{}{0em}{}
+
+%--------------------------------------------------------------------------
+% CUSTOM CONTAINERS
+%--------------------------------------------------------------------------
+\newtcolorbox{metricbox}[1]{
+  colback=CoolGrey,
+  colframe=SlateBlue,
+  arc=4pt,
+  boxrule=1pt,
+  fonttitle=\bfseries\color{white},
+  title=#1,
+  left=6pt,
+  right=6pt,
+  top=6pt,
+  bottom=6pt
+}
+
+\newtcolorbox{highlightbox}{
+  colback=CoolGrey,
+  colframe=TealAccent,
+  arc=4pt,
+  boxrule=1pt,
+  left=10pt,
+  right=10pt,
+  top=8pt,
+  bottom=8pt
+}
+
+% Bullet List Configs
+\setlist[itemize]{noitemsep, topsep=2pt, parsep=2pt}
+
+%--------------------------------------------------------------------------
+% DOCUMENT CONTENT
+%--------------------------------------------------------------------------
+\begin{document}
+
+%--- TITLE PAGE / HEADER ---
+\begin{center}
+    \vspace*{0.5in}
+    {\Huge \bfseries \color{SlateBlue} Professional Project Portfolio} \\[0.1in]
+    {\large \bfseries \color{gray} Software Developer \& AI-ML Systems} \\[0.4in]
+    
+    {\Huge \bfseries Aadith Thiruvangadan} \\[0.2in]
+    
+    \small Kannur, Kerala, India $|$ \href{mailto:aadiththiruvangadan@gmail.com}{aadiththiruvangadan@gmail.com} $|$ +91-9744345247 \\
+    \small \href{https://linkedin.com/in/aadiththiruvangadan}{linkedin.com/in/aadiththiruvangadan} $|$ \href{https://github.com/aadiththiruvangadan}{github.com/aadiththiruvangadan} \\
+    \vspace*{0.5in}
+\end{center}
+
+\begin{highlightbox}
+    \textbf{Executive Overview:} Motivated Software Developer specializing in Python, relational databases (SQL), full-stack web applications, and Machine Learning operations. This portfolio documents three engineering implementations highlighting system architecture design, data science modeling, and clean full-stack coding workflows.
+\end{highlightbox}
+
+\vspace{0.2in}
+
+%--- SECTION 1: SKILLS ---
+\section{Core Technical Competencies}
+\begin{itemize}[leftmargin=0.2in]
+    \item \textbf{Programming Languages:} Python (Scikit-learn, XGBoost, Pandas, NumPy, OpenCV, YOLO), C, SQL, PHP, HTML5, CSS3, JavaScript (ES6)
+    \item \textbf{Backend \& Web Frameworks:} Django, Flask, REST APIs, JSON, AJAX, PHP Web Engine
+    \item \textbf{Databases \& Relational Design:} MySQL, Oracle SQL, Database Schema Normalization (3NF)
+    \item \textbf{Developer Tools \& Dashboards:} Git, GitHub, Power BI, Excel, VS Code, Google Maps API
+\end{itemize}
+
+\newpage
+
+%--- SECTION 2: PROJECT 1 ---
+\section{Project 1: YouTube Video Views Prediction using Machine Learning}
+
+\subsection{Problem Statement}
+Content creators and marketing managers operate without predictive analytics to evaluate video titles and engagement signals (like likes) prior to upload. Estimating potential views before publication helps optimize metadata selection.
+
+\subsection{Solution Overview}
+Developed a statistical Machine Learning pipeline that processes textual features of titles and combines them with numerical engagement indicators to forecast video view counts. Title strings are normalized and processed using Term Frequency-Inverse Document Frequency (TF-IDF) vectorization, feeding into a regularized XGBoost regression algorithm.
+
+\begin{center}
+    \small
+    \textbf{Pipeline Flow:} [Title Input] $\rightarrow$ [TF-IDF Vectorizer] $\rightarrow$ [Concatenation with Expected Likes] $\rightarrow$ [XGBoost Regressor] $\rightarrow$ [Estimated Views]
+\end{center}
+
+\subsection{Individual Contribution}
+\begin{itemize}
+    \item Built and trained the core Machine Learning models using Scikit-learn and XGBoost regression engines.
+    \item Designed data cleaning and preprocessing pipelines to ingest raw video titles and filter out noise.
+    \item Implemented TF-IDF text handling to extract word feature frequencies.
+    \item Tuned learning hyperparameters to achieve a strong regression score (81\% accuracy).
+\end{itemize}
+
+\subsection{Engineering Challenges \& Learnings}
+\begin{itemize}
+    \item \textbf{Handling Diverse Title Vocabulary:} Highly variable title vocabulary created sparse matrices. Resolved this by setting max features constraints and tuning n-gram sizes.
+    \item \textbf{Likes Covariance Dominance:} Likes heavily dominated view count calculations, causing overfitting. Resolved this by applying L1 and L2 regularization to balance weights.
+\end{itemize}
+
+\subsection{Quantified Impact \& Results}
+\begin{metricbox}{Project Performance Metrics}
+    \begin{itemize}
+        \item \textbf{81\% Views Prediction Accuracy} achieved on unseen test data segments.
+        \item \textbf{Automated Metadata Tuning}: Creators can run simulations on multiple title options before publication.
+    \end{itemize}
+\end{metricbox}
+
+\vspace{0.2in}
+
+%--- SECTION 3: PROJECT 2 ---
+\section{Project 2: Detecting Humans in Search and Rescue}
+
+\subsection{Problem Statement}
+Disaster recovery teams scanning hazardous disaster zones manually over drone cameras face delays. Automating survivor detection helps quicken search and rescue response operations.
+
+\subsection{Solution Overview}
+Engineered a real-time survivor detection framework. Live camera feeds are processed by a YOLO model to locate survivors. The system logs the timestamps and geo-coordinates in a MySQL database, routing push notifications to field units via a Django admin server and Android app.
+
+\begin{center}
+    \small
+    \textbf{System Architecture:} [Video Stream] $\rightarrow$ [YOLO Model Classifier] $\rightarrow$ [Django Web Gateway] $\rightarrow$ [MySQL Log \& Android Push API]
+\end{center}
+
+\subsection{Individual Contribution}
+\begin{itemize}
+    \item Implemented the real-time computer vision detection scripts using YOLO and OpenCV.
+    \item Optimized input resolution downscaling and frame-rate handlers for low-latency visual inference.
+    \item Configured Django model tables and REST endpoints to log GPS coordinates and trigger alerts.
+    \item Participated in testing the mobile Android application mapping layout.
+\end{itemize}
+
+\subsection{Engineering Challenges \& Learnings}
+\begin{itemize}
+    \item \textbf{Inference Thread Blockage:} Loading frames and running calculations on a single thread caused severe lag. Resolved this by establishing a multi-threaded producer-consumer pipeline.
+    \item \textbf{Low-Contrast Captures:} Low light and dust caused high false negatives. Tuned confidence threshhold limits and applied contrast enhancement techniques to clean frames.
+\end{itemize}
+
+\subsection{Quantified Impact \& Results}
+\begin{metricbox}{Search \& Rescue Metrics}
+    \begin{itemize}
+        \item \textbf{92\% Survivor Classification Rate} under variable environmental conditions.
+        \item \textbf{Alert Latency of $<$ 1.5 seconds} between YOLO threat detection and mobile notification receipt.
+    \end{itemize}
+\end{metricbox}
+
+\newpage
+
+%--- SECTION 4: PROJECT 3 ---
+\section{Project 3: Payroll Management System}
+
+\subsection{Problem Statement}
+Manual ledger and spreadsheet accounting of employee salaries is prone to mathematical calculation slips, tax deduction inconsistencies, and poses safety risks with wage data.
+
+\subsection{Solution Overview}
+Designed a web-based administrative system that automates employee records, calculates salaries and tax cuts, and hosts a secure employee self-service hub. 
+
+\begin{center}
+    \small
+    \textbf{Web Architecture:} [Client Browser UI] $\leftrightarrow$ [PHP Web Controllers \& Auth Session APIs] $\leftrightarrow$ [MySQL Relational Tables]
+\end{center}
+
+\subsection{Individual Contribution}
+\begin{itemize}
+    \item Programmed the full-stack web application, writing PHP script logic and SQL query handlers.
+    \item Designed clean, responsive user interface dashboards using HTML, CSS, and JavaScript.
+    \item Created secure employee self-service login portals, verifying query permissions on all pages.
+    \item Built and normalized the relational MySQL database schema to Third Normal Form (3NF).
+\end{itemize}
+
+\subsection{Engineering Challenges \& Learnings}
+\begin{itemize}
+    \item \textbf{Access Control Exploitation:} Manipulating URL parameters could allow unauthorized profile views. Patched this by writing session verification checks on every PHP route.
+    \item \textbf{Flexible Tax Calculations:} Accounting for pro-rated days, attendance logs, and tax brackets was complex. Solved this by building a dedicated calculation script class.
+\end{itemize}
+
+\subsection{Quantified Impact \& Results}
+\begin{metricbox}{Payroll Processing Metrics}
+    \begin{itemize}
+        \item \textbf{80\% reduction} in HR administrative payroll calculation times.
+        \item \textbf{Zero Database Redundancy} achieved through complete MySQL schema normalization (3NF).
+    \end{itemize}
+\end{metricbox}
+
+\vspace{0.2in}
+
+%--- SECTION 5: EDUCATION & TRAINING ---
+\section{Education \& Training Timeline}
+\begin{itemize}[leftmargin=0.2in]
+    \item \textbf{Govt HSS Kannadiparamba} $|$ Higher Secondary Education (HSC) \hfill \textit{June 2019 -- March 2021}
+    \begin{itemize}[label={$\circ$}]
+        \item Focus on Mathematics, Physics, Chemistry, and Computer Science fundamentals.
+    \end{itemize}
+    \item \textbf{College Of Engineering Trikaripur} $|$ B.Tech in Computer Science \hfill \textit{November 2021 -- April 2025}
+    \begin{itemize}[label={$\circ$}]
+        \item Core studies in Data Structures, OOP (Java/C++), DBMS (SQL), Operating Systems, and Machine Learning.
+    \end{itemize}
+    \item \textbf{Pyspiders / Qspiders} $|$ Python Fullstack \& Data Science Training \hfill \textit{July 2025 -- March 2026}
+    \begin{itemize}[label={$\circ$}]
+        \item Specialized training covering Advanced Python, Django web development, MySQL, Power BI data analytics, NumPy/Pandas, and Machine Learning models.
+    \end{itemize}
+\end{itemize}
+
+\vspace{0.15in}
+
+%--- SECTION 6: CERTIFICATES & REPOS ---
+\section{Certificates \& Repositories}
+\subsection{Certificates}
+\begin{itemize}
+    \item \textbf{NPTEL:} Joy of Computing Using Python (IIT Madras)
+    \item \textbf{PySpiders / Qspiders:} Python Full Stack and Data Science Certification
+\end{itemize}
+
+\subsection{Project GitHub Repositories}
+\begin{itemize}
+    \item \textbf{YouTube Predictor (project\_ML):} \href{https://github.com/aadiththiruvangadan/youtube_views_predictions}{github.com/aadiththiruvangadan/youtube\_views\_predictions}
+    \item \textbf{YOLO Search \& Rescue:} \href{https://github.com/aadiththiruvangadan/detecting-humans-in-search-and-rescue-operations-}{github.com/aadiththiruvangadan/detecting-humans-in-search-and-rescue-operations-}
+    \item \textbf{Payroll System:} \href{https://github.com/aadiththiruvangadan/Payroll-Management-System}{github.com/aadiththiruvangadan/Payroll-Management-System}
+\end{itemize}
+
+\end{document}
